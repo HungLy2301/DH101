@@ -16,4 +16,7 @@ Respond to this week’s reflection prompt in 200–300 words.
 - Tools used:
 - AI prompts (summary):
 - What AI generated:
+
+![Black dot image](../assets/images/dot.svg)
+
 - What you changed or decided:
