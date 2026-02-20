@@ -17,6 +17,6 @@ Respond to this week’s reflection prompt in 200–300 words.
 - AI prompts (summary):
 - What AI generated:
 
-![Black dot image](../assets/images/dot.svg)
+![Black dot GIF](../assets/images/dot.gif)
 
 - What you changed or decided:
