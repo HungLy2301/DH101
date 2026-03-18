@@ -17,6 +17,6 @@ Respond to this week’s reflection prompt in 200–300 words.
 - AI prompts (summary):
 - What AI generated:
 
-![Black dot GIF](../assets/images/dot.gif)
+![Animated black dot GIF created using Python script for Week 5 assignment on GIF and remix culture](../assets/images/dot.gif)
 
 - What you changed or decided:
