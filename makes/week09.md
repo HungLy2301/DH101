@@ -1,6 +1,6 @@
 # Week 9 – Bots & Generators
 
-![A screenshot of the Tracery editor interface showing the grammar rules for surreal product descriptions](../assets/images/Screenshot 2026-03-30 at 3.17.53 PM.png)
+![A screenshot of the Tracery editor interface showing the grammar rules for surreal product descriptions](../assets/images/tracery-screenshot.png)
 
 ## The Artifact
 #1
