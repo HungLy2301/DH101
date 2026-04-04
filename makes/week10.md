@@ -4,13 +4,17 @@ Katie and Hung
 
 ## The Artifact
 
+<iframe src="week10-game.html" width="100%" height="900" style="border:1px solid #ccc; max-width:100%;"></iframe>
+
+If the embed does not render in your current viewer, open the game directly here:
+
 **[Play "The Interview" Game](week10-game.html)**
 
 *The Interview* is an interactive narrative game built with Twine exploring the gap between authentic self and performed identity in the context of an AI job interview. The game presents the player with choices that appear meaningful but systematically reveal how much agency is illusory in evaluative systems.
 
 The game consists of 9 passages with branching paths that converge toward two distinct endings, each offering a different perspective on the relationship between performance and authenticity. The writing uses procedural rhetoric through mechanics like timed pauses (measured in decimal seconds), percentile comparisons, and data retention language to make players feel the surveilling nature of the system itself.
 
-Click the link above to play through the experience (approximately 10-15 minutes per playthrough).
+The embedded game should be playable directly from this page when the site is served as a static website. If it still does not load here, use the direct link above.
 
 ## Design Statement
 
