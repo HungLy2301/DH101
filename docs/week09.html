@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9: Bots & Generators - Hung Ly</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Hung Ly</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">Work</a>
+      <span>/</span>
+      <span>Week 9: Bots & Generators</span>
+    </div>
+
+    <div class="content-container">
+      <article>
+        <h1>Week 9: Bots & Generators</h1>
+        <p style="color: #7f8c8d; font-size: 1.05rem; margin-bottom: 2rem;">
+          A Tracery-based generative system creating surreal product descriptions. Explores curation as authorship.
+        </p>
+
+        <h2>The Artifact</h2>
+        <p>
+          I built a text generator using <strong>Tracery</strong> that creates surreal product listings—fake descriptions 
+          for objects that deal in emotion, memory, and dread. The generator has no practical function. It exists to 
+          generate weird, emotionally coherent text.
+        </p>
+        <p>
+          Through multiple iterations, I curated 7 standout outputs. Here are three examples:
+        </p>
+        
+        <blockquote>
+          <strong>"The Unnamed Thing."</strong> Made from compressed forgetting, translucent like an apology. 
+          A sphere that is not quite touching itself. It locates the feeling you misplaced. Extracted from a recurring 
+          dream with permission. Feels like holding warm sand that is also listening. Side effects may include an unfamiliar 
+          smell in the left nostril. Free, but not without consequence. Warning: Keep away from unfinished conversations.
+        </blockquote>
+
+        <blockquote>
+          <strong>"The Pale Mirror."</strong> A pale grey that hums, flat in a way that feels personal. 
+          Sourced from the space between Wednesday and Thursday. Primary use: absorbs ambient regret. 
+          It feels like pressing your palm against a fogged window from the inside. Known side effects: 
+          a sudden memory of a house you have never visited.
+        </blockquote>
+
+        <blockquote>
+          <strong>"Found at the bottom of a sound: The Quiet Instrument."</strong> Constructed entirely of compressed forgetting. 
+          Appears translucent like an apology. Like a door that forgot what it was for. Designed to locate the feeling you misplaced. 
+          Side effects may include the sensation of being briefly watched. My reflection started using it too.
+        </blockquote>
+
+        <h2>Process Notes</h2>
+        <p>
+          I built the generator using <strong>Tracery</strong>, a grammar-based text generation tool accessible at tracery.io. 
+          The generator contains 12 symbols (product_name, material, color, shape, function, etc.) with 5-8 options each, 
+          written toward a specific emotional register: unsettling and dreamy.
+        </p>
+        <p>
+          I generated approximately 60 outputs total by repeatedly clicking regenerate. Many were coherent but unremarkable. 
+          I stopped when I felt I had enough variety to curate meaningfully, settling on 7 final selections from the pool.
+        </p>
+        <p>
+          What surprised me: novelty exhausted itself quickly. After ~20 outputs, I stopped asking "is this interesting?" 
+          and started asking "is this the most interesting version of this idea?" That shift from generation to judgment 
+          felt significant. The question became about curation, not production.
+        </p>
+
+        <h2>Reflection</h2>
+        <p>
+          <strong>Where is the human in generative work?</strong> I think the honest answer is: everywhere except the middle. 
+          I defined the inputs (the grammar), I selected the outputs (the curation), and everything in between was a process 
+          I set in motion but did not control.
+        </p>
+        <p>
+          The outputs I chose share something rejected ones didn't: internal coherence. Each random combination somehow confirms 
+          the others. That coherence was never programmed. It was noticed. And noticing, I think, is still a human act.
+        </p>
+        <p>
+          This project taught me that <strong>curation is its own kind of authorship</strong>—slower, more uncomfortable, and 
+          more revealing than generation. The system doesn't have taste, but it inherits mine. The real creativity happens in 
+          deciding what to keep, what to throw away, and why.
+        </p>
+
+        <h2>Attribution & AI Use</h2>
+        <p>
+          <strong>Tools Used:</strong> Tracery (a free grammar-based text generation tool)
+        </p>
+        <p>
+          <strong>Process:</strong> All grammar rules, word lists, and sentence templates were written by me and entered into 
+          the Tracery editor as a JSON file. No AI writing tools were used to generate outputs. All curated outputs are direct 
+          products of my grammar, selected and annotated by me.
+        </p>
+        <p>
+          <strong>My Policy on AI Use:</strong> I use AI as a thinking partner, not a ghostwriter. The voice in these descriptions 
+          is mine. The system amplifies my sensibility, but doesn't replace it.
+        </p>
+
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ecf0f1;">
+          <a href="index.html" class="btn" style="display: inline-block;">← Back to All Work</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
+        <a href="mailto:your-email@example.com">Email</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+      <p class="footer-text">
+        © 2026 Hung Ly. All work created as part of DH101: Digital Humanities course.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
