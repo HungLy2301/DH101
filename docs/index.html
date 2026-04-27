@@ -1,29 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DH101 Site</title>
-<style>
-body{font-family:system-ui, sans-serif;line-height:1.6;color:#111;background:#f7f7f7;margin:0;padding:2rem}
-main{max-width:860px;margin:0 auto;padding:2rem;background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.08)}
-a{color:#0366d6;text-decoration:none}
-a:hover{text-decoration:underline}
-section+section{margin-top:2rem}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hung Ly - Work Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-<h1>DH101 Static Site</h1>
-<p>This repository is now set up for GitHub Pages using the <code>docs/</code> folder.</p>
-<section>
-<h2>Play the Game</h2>
-<p><a href="week10-game.html">Play “The Interview”</a></p>
-</section>
-<section>
-<h2>Project Page</h2>
-<p><a href="week10.html">View the Make 10 writeup</a></p>
-</section>
-</main>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Hung Ly</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Digital Humanities & Creative Computing</h1>
+      <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+        Exploring how technology shapes meaning, identity, and labor through design,
+        text analysis, interactive narrative, and critical mapping.
+      </p>
+    </section>
+
+    <section class="search-section">
+      <input 
+        type="text" 
+        id="search-box" 
+        class="search-box" 
+        placeholder="Search by project title or keyword..."
+      >
+      <div class="search-info">Type to filter projects</div>
+    </section>
+
+    <div id="no-results" class="no-results" style="display: none;">
+      <p>No projects match your search. Try a different keyword.</p>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
+        <a href="mailto:your-email@example.com">Email</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+      <p class="footer-text">
+        © 2026 Hung Ly. All work created as part of DH101: Digital Humanities course.
+      </p>
+    </div>
+  </footer>
+
+  <script src="search.js"></script>
+  <script>
+    const projectsData = [
+      {
+        title: "Week 7: Mapping AI Worlds",
+        date: "Week 7",
+        description: "A critical counter-map of Google and Meta's global infrastructure, revealing the hidden geography of data centers, content moderation labor, and the externalized costs of AI systems.",
+        link: "week07.html"
+      },
+      {
+        title: "Week 10: Games & Play - The Interview",
+        date: "Week 10",
+        description: "An interactive narrative game about AI job interviews, algorithmic evaluation, and the gap between authentic self and performed identity in automated systems.",
+        link: "week10.html"
+      },
+      {
+        title: "Week 9: Bots & Generators",
+        date: "Week 9",
+        description: "A Tracery-based generative system creating surreal product descriptions that deal in emotion, memory, and dread. Explores creative curation in algorithmic systems.",
+        link: "week09.html"
+      },
+      {
+        title: "Text Analysis: How Machines Read",
+        date: "Special Project",
+        description: "A comparative analysis of how Voyant and GPT read Sojourner Truth's 'Ain't I a Woman?' - examining what different machines reveal and obscure about textual meaning.",
+        link: "text-analysis.html"
+      },
+      {
+        title: "Week 1: Reverse Engineering",
+        date: "Week 1",
+        description: "Learning to think about the systems, decisions, and histories embedded in designed objects and digital artifacts.",
+        link: "week01.html"
+      },
+      {
+        title: "Week 3: Selfie & Identity",
+        date: "Week 3",
+        description: "Exploring digital self-representation and how images construct identity in networked spaces.",
+        link: "week03.html"
+      },
+      {
+        title: "Week 4: Comic & Storytelling",
+        date: "Week 4",
+        description: "Investigating narrative structures and visual storytelling as forms of meaning-making.",
+        link: "week04.html"
+      },
+      {
+        title: "Week 6: Text & Distant Reading",
+        date: "Week 6",
+        description: "Using computational text analysis to examine patterns, frequency, and meaning at scale.",
+        link: "week06.html"
+      },
+      {
+        title: "Week 8: Networks of Knowledge & Power",
+        date: "Week 8",
+        description: "Understanding how knowledge is structured, distributed, and controlled through networks and systems.",
+        link: "week08.html"
+      },
+      {
+        title: "Week 11: AI & Labor",
+        date: "Week 11",
+        description: "Critical examination of labor practices, automation, and the human costs embedded in AI systems.",
+        link: "week11.html"
+      },
+      {
+        title: "Week 12: AI & Ecology",
+        date: "Week 12",
+        description: "Exploring the environmental and ecological dimensions of AI infrastructure and computation.",
+        link: "week12.html"
+      },
+      {
+        title: "Week 13: Futures of AI & Humanity",
+        date: "Week 13",
+        description: "Speculating on and designing for possible futures shaped by artificial intelligence and human values.",
+        link: "week13.html"
+      }
+    ];
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('grid');
+      projectsData.forEach(project => {
+        grid.appendChild(createCard(project));
+      });
+      initializeSearch(projectsData);
+    });
+  </script>
 </body>
 </html>
