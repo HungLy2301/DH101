@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hung Ly - Work Portfolio</title>
+  <title>Hung Ly | Playful Digital Humanities</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,10 +20,10 @@
 
   <main>
     <section>
-      <h1>Digital Humanities & Creative Computing</h1>
-      <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
-        Exploring how technology shapes meaning, identity, and labor through design,
-        text analysis, interactive narrative, and critical mapping.
+      <h1>Interactive research made playful</h1>
+      <p style="font-size: 1.1rem; color: #5c6a91; margin-bottom: 2rem; max-width: 760px;">
+        Explore projects that turn AI, media, and digital systems into stories, games, counter-maps, and visual analysis.
+        Each card opens a project page designed to feel creative, reflective, and interactive.
       </p>
     </section>
 
@@ -32,13 +32,13 @@
         type="text" 
         id="search-box" 
         class="search-box" 
-        placeholder="Search by project title or keyword..."
+        placeholder="Search by project title, theme, or medium..."
       >
-      <div class="search-info">Type to filter projects</div>
+      <div class="search-info">Start typing to find your next project</div>
     </section>
 
     <div id="no-results" class="no-results" style="display: none;">
-      <p>No projects match your search. Try a different keyword.</p>
+      <p>No projects match your search. Try another keyword like “AI,” “game,” or “map.”</p>
     </div>
 
     <div id="grid" class="grid"></div>
@@ -52,7 +52,7 @@
         <a href="https://twitter.com" target="_blank">Twitter</a>
       </div>
       <p class="footer-text">
-        © 2026 Hung Ly. All work created as part of DH101: Digital Humanities course.
+        © 2026 Hung Ly. A portfolio of playful digital humanities work.
       </p>
     </div>
   </footer>
@@ -61,75 +61,81 @@
   <script>
     const projectsData = [
       {
-        title: "Week 7: Mapping AI Worlds",
+        title: "The real map that shows hidden truths about AI",
         date: "Week 7",
-        description: "A critical counter-map of Google and Meta's global infrastructure, revealing the hidden geography of data centers, content moderation labor, and the externalized costs of AI systems.",
+        description: "A counter-map revealing Google and Meta’s physical infrastructure, labor sites, and the untold costs of AI.",
         link: "week07.html"
       },
       {
-        title: "Week 10: Games & Play - The Interview",
+        title: "A game that makes AI interviews feel unsettlingly real",
         date: "Week 10",
-        description: "An interactive narrative game about AI job interviews, algorithmic evaluation, and the gap between authentic self and performed identity in automated systems.",
+        description: "An interactive Twine experience about performance, surveillance, and what it means to answer an AI.",
         link: "week10.html"
       },
       {
-        title: "Week 9: Bots & Generators",
+        title: "Surreal bot stories that sell feelings as products",
         date: "Week 9",
-        description: "A Tracery-based generative system creating surreal product descriptions that deal in emotion, memory, and dread. Explores creative curation in algorithmic systems.",
+        description: "A Tracery generator producing strange product descriptions and showing how curation is creative work.",
         link: "week09.html"
       },
       {
-        title: "Text Analysis: How Machines Read",
-        date: "Special Project",
-        description: "A comparative analysis of how Voyant and GPT read Sojourner Truth's 'Ain't I a Woman?' - examining what different machines reveal and obscure about textual meaning.",
+        title: "How two machines read Sojourner Truth differently",
+        date: "Text Analysis",
+        description: "A side-by-side comparison of Voyant and GPT reading the speech ‘Ain’t I a Woman?’.",
         link: "text-analysis.html"
       },
       {
-        title: "Week 1: Reverse Engineering",
+        title: "Reverse engineering artifacts to reveal hidden systems",
         date: "Week 1",
-        description: "Learning to think about the systems, decisions, and histories embedded in designed objects and digital artifacts.",
+        description: "A first week project unpacking how designed objects encode choices and values.",
         link: "week01.html"
       },
       {
-        title: "Week 3: Selfie & Identity",
+        title: "Selfies, identity, and what it means to be seen",
         date: "Week 3",
-        description: "Exploring digital self-representation and how images construct identity in networked spaces.",
+        description: "A creative investigation of digital self-representation and networked identity.",
         link: "week03.html"
       },
       {
-        title: "Week 4: Comic & Storytelling",
+        title: "Comics as storytelling machines",
         date: "Week 4",
-        description: "Investigating narrative structures and visual storytelling as forms of meaning-making.",
+        description: "Exploring narrative, pacing, and visual meaning through comic design.",
         link: "week04.html"
       },
       {
-        title: "Week 6: Text & Distant Reading",
+        title: "A playful remix of GIF culture and creative coding",
+        date: "Week 5",
+        description: "A GIF-based project that experiments with motion, remix, and media culture.",
+        link: "week05.html"
+      },
+      {
+        title: "Reading text at scale with code",
         date: "Week 6",
-        description: "Using computational text analysis to examine patterns, frequency, and meaning at scale.",
+        description: "An introduction to distant reading and computational analysis of language.",
         link: "week06.html"
       },
       {
-        title: "Week 8: Networks of Knowledge & Power",
+        title: "Networks of knowledge and the power they hide",
         date: "Week 8",
-        description: "Understanding how knowledge is structured, distributed, and controlled through networks and systems.",
+        description: "A critical look at how systems and networks shape what gets seen and who has influence.",
         link: "week08.html"
       },
       {
-        title: "Week 11: AI & Labor",
+        title: "AI labor exposed: the people behind the system",
         date: "Week 11",
-        description: "Critical examination of labor practices, automation, and the human costs embedded in AI systems.",
+        description: "A project exploring the hidden labor that makes AI systems run.",
         link: "week11.html"
       },
       {
-        title: "Week 12: AI & Ecology",
+        title: "AI's ecological footprint and the cost of compute",
         date: "Week 12",
-        description: "Exploring the environmental and ecological dimensions of AI infrastructure and computation.",
+        description: "A research exploration of climate, energy, and the environment of AI.",
         link: "week12.html"
       },
       {
-        title: "Week 13: Futures of AI & Humanity",
+        title: "Futures of AI and humanity in a changing world",
         date: "Week 13",
-        description: "Speculating on and designing for possible futures shaped by artificial intelligence and human values.",
+        description: "A speculative project imagining what AI means for people and society.",
         link: "week13.html"
       }
     ];
