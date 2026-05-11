@@ -20,6 +20,10 @@ weeks = {
         'title': 'Week 4: Comic & Storytelling',
         'subtitle': 'Narrative structures and visual meaning-making'
     },
+    'week05': {
+        'title': 'Text Analysis: How Machines Read',
+        'subtitle': 'Comparing computational and AI approaches to textual meaning'
+    },
     'week06': {
         'title': 'Week 6: Text & Distant Reading',
         'subtitle': 'Computational analysis and textual patterns'
@@ -51,10 +55,6 @@ weeks = {
     'week13': {
         'title': 'Week 13: Futures of AI & Humanity',
         'subtitle': 'Speculating on possible futures'
-    },
-    'text-analysis': {
-        'title': 'Text Analysis: How Machines Read',
-        'subtitle': 'Comparing computational and AI approaches to textual meaning'
     }
 }
 
@@ -73,11 +73,11 @@ def markdown_to_html_content(md_content):
     md_content = re.sub(r'\*(.*?)\*', r'<em>\1</em>', md_content)
     md_content = re.sub(r'_(.*?)_', r'<em>\1</em>', md_content)
     
-    # Convert links
-    md_content = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2" target="_blank">\1</a>', md_content)
-    
     # Convert images
     md_content = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1" />', md_content)
+    
+    # Convert links
+    md_content = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2" target="_blank">\1</a>', md_content)
     
     # Convert blockquotes
     md_content = re.sub(r'> (.*?)$', r'<blockquote>\1</blockquote>', md_content, flags=re.MULTILINE)

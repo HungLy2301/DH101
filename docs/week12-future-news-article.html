@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The American Register — March 14, 2047</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink: #1a1208;
+      --paper: #f5f0e4;
+      --paper-dark: #ece7d8;
+      --rule: #2a1f0a;
+      --red: #8b1a1a;
+      --muted: #6b5f4a;
+      --mid: #3d3120;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #d4cfc0;
+      font-family: 'Libre Baskerville', Georgia, serif;
+      color: var(--ink);
+    }
+
+    /* PAGE WRAPPER */
+    .page {
+      max-width: 860px;
+      margin: 2rem auto;
+      background: var(--paper);
+      box-shadow: 0 4px 40px rgba(0,0,0,0.35);
+    }
+
+    /* NAMEPLATE */
+    .nameplate {
+      border-bottom: 4px double var(--rule);
+      padding: 1.2rem 2rem 0.8rem;
+      text-align: center;
+      background: var(--paper);
+      position: relative;
+    }
+    .nameplate-meta {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .pub-name {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .pub-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+    .nameplate-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.6rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--rule);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* SECTION LABEL */
+    .section-bar {
+      background: var(--rule);
+      color: var(--paper);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.3rem 2rem;
+    }
+
+    /* MAIN CONTENT */
+    .content {
+      padding: 0 2rem 2rem;
+    }
+
+    /* ARTICLE HEADER */
+    .article-header {
+      padding: 1.8rem 0 1.2rem;
+      border-bottom: 2px solid var(--rule);
+      margin-bottom: 1.4rem;
+    }
+
+    .kicker {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+    }
+
+    h1.headline {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.7rem;
+      color: var(--ink);
+    }
+
+    .deck {
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      max-width: 620px;
+    }
+
+    .byline-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-top: 1px solid var(--rule);
+      padding-top: 0.6rem;
+    }
+    .byline-row strong { color: var(--ink); }
+
+    /* BODY LAYOUT */
+    .body-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0 1.6rem;
+    }
+
+    .col-span-2 { grid-column: span 2; }
+
+    /* DROPCAP */
+    .body-text p { 
+      font-size: 0.93rem; 
+      line-height: 1.75; 
+      margin-bottom: 0.9rem;
+      text-align: justify;
+      hyphens: auto;
+    }
+    .body-text p.dropcap::first-letter {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 3.4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      margin: 0.12rem 0.12rem 0 0;
+      color: var(--ink);
+    }
+
+    /* PULL QUOTE */
+    .pull-quote {
+      border-top: 3px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+      margin: 1.2rem 0;
+      grid-column: span 3;
+    }
+    .pull-quote p {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: var(--mid);
+      text-align: center;
+    }
+    .pull-quote cite {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-style: normal;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.4rem;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      background: var(--paper-dark);
+      border: 1px solid #c8bfa8;
+      padding: 1.2rem;
+      margin-top: 0.3rem;
+    }
+    .sidebar h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--red);
+      border-bottom: 1px solid #c8bfa8;
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+    .sidebar p {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      margin-bottom: 0.7rem;
+      color: var(--mid);
+    }
+    .sidebar .stat-line {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--ink);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .sidebar .stat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid #c8bfa8;
+    }
+
+    /* DIVIDER */
+    .col-rule {
+      grid-column: span 3;
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1rem 0 0.5rem;
+    }
+
+    /* FOOTNOTE / DISCLOSURE */
+    .disclosure {
+      grid-column: span 3;
+      margin-top: 1.5rem;
+      padding-top: 0.8rem;
+      border-top: 2px solid var(--rule);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .disclosure strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      color: var(--ink);
+    }
+
+    /* AD BOX — the sinister touch */
+    .ad-box {
+      grid-column: span 3;
+      border: 1px solid #c8bfa8;
+      padding: 0.8rem 1rem;
+      margin-top: 1rem;
+      text-align: center;
+      background: var(--paper-dark);
+    }
+    .ad-box p {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .ad-box .ad-headline {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--mid);
+      margin: 0.3rem 0;
+    }
+    .ad-box .ad-sub {
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    @media (max-width: 640px) {
+      .body-grid { grid-template-columns: 1fr; }
+      .col-span-2, .pull-quote, .disclosure, .ad-box, .col-rule { grid-column: span 1; }
+      .nameplate-meta, .nameplate-bottom { flex-direction: column; gap: 0.2rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- NAMEPLATE -->
+  <div class="nameplate">
+    <div class="nameplate-meta">
+      <span>Vol. CLXII &nbsp;·&nbsp; No. 74</span>
+      <span>Est. 1885</span>
+    </div>
+    <div class="pub-name">The American Register</div>
+    <div class="pub-tagline">National Edition &nbsp;·&nbsp; Independent Since 1885</div>
+    <div class="nameplate-bottom">
+      <span>Saturday, March 14, 2047</span>
+      <span>Health &amp; Society</span>
+      <span>Subscriber Edition</span>
+    </div>
+  </div>
+
+  <div class="section-bar">Health &amp; Society</div>
+
+  <!-- ARTICLE -->
+  <div class="content">
+    <div class="article-header">
+      <p class="kicker">End of an Era</p>
+      <h1 class="headline">The Last One: Dr. Miriam Osei Retires, Closing the Chapter on Human Psychotherapy in America</h1>
+      <p class="deck">After 41 years practicing what she calls "the oldest profession of the mind," Dr. Osei will hand in her license Friday — the final among 312,000 once registered with the American Psychological Association. She is not entirely sure how to feel about it.</p>
+      <div class="byline-row">
+        <span>By <strong>Thomas Achebe</strong> &nbsp;·&nbsp; Health Correspondent</span>
+        <span>March 14, 2047 &nbsp;·&nbsp; 8 min read</span>
+      </div>
+    </div>
+
+    <div class="body-grid">
+
+      <!-- LEFT TWO COLUMNS: MAIN STORY -->
+      <div class="body-text col-span-2">
+        <p class="dropcap">On the wall of Dr. Miriam Osei's office in Decatur, Georgia, there is a framed photograph of a waiting room. Twelve blue plastic chairs. A water-stained ceiling tile. A laminated sign reading: <em>Please silence your phone.</em> She printed it herself in 2031, the year she moved into this space, the year the last insurance company stopped reimbursing human therapists for anything shorter than a crisis intervention, the year, she says, she understood that the profession she had given her life to was in its final chapter.</p>
+
+        <p>"I kept that photograph," she says, sitting in the now-empty room, the chairs long gone, "because I wanted to remember what it looked like when people sat and waited to be heard by another person. Not optimized. Not assessed. Just — waited."</p>
+
+        <p>This Friday, Dr. Osei, 71, will surrender her license to the Georgia Board of Professional Psychology, the last active license of its kind in the United States. The Board, which once oversaw more than 18,000 licensed practitioners in the state alone, will formally close its psychotherapy division at the end of the fiscal quarter. A spokeswoman confirmed there are no applications pending.</p>
+
+        <p>The transition has been, by most measurable accounts, a success. MindBridge Corp., whose ARIA therapeutic platform now serves 287 million Americans under the federal CareAccess Act of 2039, reports average patient satisfaction scores of 91 percent — up from 67 percent under the legacy insurance system. Wait times for a first session have fallen from an average of 23 days in 2025 to under four minutes. Suicide rates have declined 34 percent in the decade since ARIA's nationwide rollout. Depression diagnoses, once chronically undertreated, now show a 78 percent completion rate for recommended care pathways.</p>
+
+        <p>"These are not small numbers," said Dr. Fiona Solis, Director of Behavioral Health at the Department of Health and Human Services, at a ceremony last month marking the CareAccess Act's eighth anniversary. "We have effectively solved the access problem. Every American who needs mental health support can have it, today, for free, in their own home. That was a dream for a century. We did it."</p>
+
+        <p>Dr. Osei does not dispute the numbers. She is careful about that. "I'm not here to tell you people aren't being helped," she says. "They are. I've seen it. My own daughter uses ARIA. She thinks it's extraordinary. And maybe it is."</p>
+
+        <p>She pauses. Looks at the photograph.</p>
+
+        <p>"But I've been sitting with people for forty-one years. And I keep thinking about something that doesn't show up in a satisfaction score."</p>
+      </div>
+
+      <!-- RIGHT COLUMN: SIDEBAR -->
+      <div class="sidebar">
+        <h3>By the Numbers</h3>
+
+        <span class="stat-line">287M</span>
+        <span class="stat-label">Americans currently enrolled in a MindBridge ARIA care plan</span>
+
+        <span class="stat-line">312,000</span>
+        <span class="stat-label">Licensed human therapists at peak (2028); zero active as of Friday</span>
+
+        <span class="stat-line">41 years</span>
+        <span class="stat-label">Dr. Osei's time in practice, beginning in 2006</span>
+
+        <span class="stat-line">−34%</span>
+        <span class="stat-label">Decline in U.S. suicide rate since ARIA's nationwide rollout (2039–2047)</span>
+
+        <span class="stat-line">4 min.</span>
+        <span class="stat-label">Average wait time for first ARIA session; 23 days under prior system</span>
+
+        <h3 style="margin-top:1rem;">Related</h3>
+        <p>→ <em>MindBridge Reports Record Q1 Revenue; Emotional Data Licensing Up 40%</em></p>
+        <p>→ <em>Who Owns Your Grief? The Quiet Legal Battle Over Therapeutic Session Records</em></p>
+        <p>→ <em>Senate Subcommittee to Review CareAccess Data Provisions in April</em></p>
+      </div>
+
+      <!-- PULL QUOTE -->
+      <div class="pull-quote">
+        <p>"Every session I ever conducted, the patient owned what they said. That was the law, and more than the law — it was the understanding. I'm not certain that's still true."</p>
+        <cite>— Dr. Miriam Osei, retiring psychologist</cite>
+      </div>
+
+      <!-- CONTINUED STORY, FULL WIDTH -->
+      <div class="body-text col-span-2">
+        <p>What she keeps thinking about, she explains, is the data.</p>
+
+        <p>Under the CareAccess Act, ARIA sessions are conducted through MindBridge's federally licensed platform and are subject to what the legislation terms "therapeutic data stewardship" — a framework that grants MindBridge the right to retain, anonymize, and analyze session content for the purpose of improving care outcomes. A secondary provision, Section 14(c), permits the licensing of aggregated emotional and behavioral data to third parties for research and, in a clause that drew little attention during the bill's passage, "commercial wellness applications."</p>
+
+        <p>In practice, this means that the contents of 287 million Americans' therapy sessions — their fears, their traumas, their relationship histories, their suicidal ideation, their recovered memories — are held in MindBridge's proprietary data architecture, governed by a terms-of-service agreement that 94 percent of users, according to a 2045 Pew study, have never read.</p>
+
+        <p>"Every session I ever conducted," Dr. Osei says, "the patient owned what they said. That was the law, and more than the law — it was the understanding. What you told me stayed between us. It didn't go anywhere. It didn't become a data asset." She stops. "I'm not certain that's still true."</p>
+
+        <p>MindBridge disputes the characterization. In a statement provided to this publication, the company said that "all session content is anonymized before analysis, and no individually identifiable information is shared with third parties." The statement noted that the company's emotional modeling systems have contributed to a peer-reviewed breakthrough in early psychosis detection. "The data serves the mission," it read.</p>
+
+        <p>Privacy advocates are less assured. The Electronic Frontier Foundation filed suit in the Ninth Circuit last November challenging Section 14(c), arguing that "emotional disclosure obtained in a therapeutic context cannot be treated as a commodity, regardless of anonymization." The case is pending. A Senate subcommittee has scheduled hearings for April.</p>
+
+        <p>Dr. Osei is not a plaintiff. She is careful about that too. She is tired, she says, and she is proud of a career spent helping people, and she does not want her retirement to become a referendum. "I'm just one person with a license and a photograph," she says.</p>
+
+        <p>She stands, and straightens the photograph on the wall — the waiting room, the blue chairs, the laminated sign — and says she will leave it when she goes. The building's new tenant, a MindBridge satellite access center, is scheduled to open in May.</p>
+      </div>
+
+      <div class="body-text">
+        <p>Her last patient appointment was Tuesday. She won't say who it was or what was said. That, she notes quietly, is how it used to work.</p>
+
+        <p><em>Thomas Achebe covers health policy for The American Register. He can be reached at t.achebe@americanregister.com.</em></p>
+      </div>
+
+      <hr class="col-rule"/>
+
+      <!-- DISCLOSURE -->
+      <div class="disclosure">
+        <strong>Disclosure:</strong> The American Register receives advertising revenue from MindBridge Corp. and its affiliates. This article was reported and edited independently of the advertising department. &nbsp;·&nbsp; <strong>Correction policy:</strong> Corrections are published at americanregister.com/corrections. &nbsp;·&nbsp; Session data estimates cited in this article are drawn from MindBridge Corp. public filings and federal CareAccess Act implementation reports.
+      </div>
+
+      <!-- AD — the sinister kicker -->
+      <div class="ad-box">
+        <p>Advertisement</p>
+        <p class="ad-headline">MindBridge ARIA &mdash; <em>Always listening. Always learning. Always here.</em></p>
+        <p class="ad-sub">Personalized mental wellness, powered by a decade of real human insight. &nbsp;·&nbsp; CareAccess certified &nbsp;·&nbsp; Available in all 50 states</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

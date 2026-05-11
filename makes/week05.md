@@ -6,10 +6,10 @@ Materials for text analysis will go here.
 
 AHI 101 — Week 6 Make: How Machines Read
 
-![Voyant Cirrus Word Cloud](../assets/images/voyant-cirrus.png)
+![Voyant Cirrus Word Cloud](assets/images/voyant-cirrus.png)
 *Voyant Cirrus word cloud from the speech.*
 
-![Voyant Trends Graph](../assets/images/voyant-trends.png)
+![Voyant Trends Graph](assets/images/voyant-trends.png)
 *Trend lines showing relative frequencies of key terms across segments.*
 Student Name: Hung Ly
 Text Analyzed: “Ain’t I a Woman?” by Sojourner Truth (1851 speech, Akron Women’s Rights Convention)
