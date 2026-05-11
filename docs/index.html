@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hung Ly | Playful Digital Humanities</title>
+  <title>Hung Ly — Critical Making in the Age of AI</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
   <header>
     <nav>
       <a href="index.html" class="logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Work</a></li>
+        <li><a href="index.html" aria-current="page">Work</a></li>
         <li><a href="reflections.html">Reflections</a></li>
+        <li><a href="final-reflection.html">Final Reflection</a></li>
+        <li><a href="how-i-use-ai.html">How I Use AI</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#footer">Contact</a></li>
       </ul>
@@ -20,134 +24,235 @@
   </header>
 
   <main>
-    <section>
-      <h1>Interactive research made playful</h1>
-      <p style="font-size: 1.1rem; color: #5c6a91; margin-bottom: 2rem; max-width: 760px;">
-        Explore projects that turn AI, media, and digital systems into stories, games, counter-maps, and visual analysis.
-        Each card opens a project page designed to feel creative, reflective, and interactive.
-      </p>
+
+    <!-- ── Hero ───────────────────────────────────────────────── -->
+    <section class="hero-section">
+      <h1>AI is not a tool. It is a system of power.</h1>
+      <div class="hero-intro">
+        <p>
+          I came into this semester thinking about AI the way most people do — as a tool.
+          Something you prompt, something that outputs, something useful or occasionally
+          frustrating. I left thinking about it as a system: a set of relationships between
+          labor, infrastructure, capital, and meaning that is designed, at nearly every level,
+          to make itself hard to see.
+        </p>
+        <p>
+          That shift happened across twelve projects — a comic, a GIF, a Twine game, a
+          counter-map, a network diagram, an infographic, a data visualization, a speculative
+          newspaper from 2047 — and each one cracked the same assumption from a different
+          angle. Who actually does the work behind AI? Where does the water go? When the
+          machine generates an image, moderates a video, or fills a progress bar, who decided
+          what that means — and who bears the cost of getting there?
+        </p>
+        <p>
+          What I've come to argue is that AI shifts authorship in ways that are real but
+          uneven. The machine can animate, generate, moderate, and sort at a scale no human
+          can match. But humans still define what the output signifies, set the limits on what
+          the system can do, and — most importantly — bear the consequences when those limits
+          fail or those costs are hidden. Being human in the age of AI is not about resisting
+          automation. It is about refusing to look away from what automation costs.
+        </p>
+        <p>
+          This portfolio is a record of that shift. Each project below includes the artifact,
+          a reflection, and a full account of how AI was and wasn't used in making it.
+        </p>
+      </div>
+      <div class="hero-meta">
+        <span>DH 101: Critical Making in the Age of AI</span>
+        <span>·</span>
+        <span>Denison University, Spring 2026</span>
+        <span>·</span>
+        <a href="final-reflection.html">Read the Final Reflection →</a>
+      </div>
     </section>
 
-    <section class="search-section">
-      <input 
-        type="text" 
-        id="search-box" 
-        class="search-box" 
-        placeholder="Search by project title, theme, or medium..."
+    <!-- ── Filter Tags ─────────────────────────────────────────── -->
+    <section class="filter-section" aria-label="Filter projects by type">
+      <div class="filter-tags" id="filter-tags">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Analysis">Analysis</button>
+        <button class="filter-btn" data-filter="Comic">Comic</button>
+        <button class="filter-btn" data-filter="GIF">GIF</button>
+        <button class="filter-btn" data-filter="Map">Map</button>
+        <button class="filter-btn" data-filter="Network">Network</button>
+        <button class="filter-btn" data-filter="Game">Game</button>
+        <button class="filter-btn" data-filter="Bot">Bot</button>
+        <button class="filter-btn" data-filter="Infographic">Infographic</button>
+        <button class="filter-btn" data-filter="Data Viz">Data Viz</button>
+        <button class="filter-btn" data-filter="Fiction">Fiction</button>
+      </div>
+    </section>
+
+    <!-- ── Search ──────────────────────────────────────────────── -->
+    <section class="search-section" aria-label="Search projects">
+      <input
+        type="search"
+        id="search-box"
+        class="search-box"
+        placeholder="Search by title, theme, or medium — try 'labor', 'map', or 'game'"
+        aria-label="Search projects"
       >
-      <div class="search-info">Start typing to find your next project</div>
     </section>
 
-    <div id="no-results" class="no-results" style="display: none;">
-      <p>No projects match your search. Try another keyword like “AI,” “game,” or “map.”</p>
+    <!-- ── No Results ──────────────────────────────────────────── -->
+    <div id="no-results" class="no-results" style="display: none;" role="status" aria-live="polite">
+      <p>No projects match your search. Try a different keyword — like "AI," "water," "labor," or "game."</p>
     </div>
 
-    <div id="grid" class="grid"></div>
+    <!-- ── Project Grid ────────────────────────────────────────── -->
+    <div id="grid" class="grid" role="list" aria-label="Project portfolio"></div>
+
   </main>
 
+  <!-- ── Footer ─────────────────────────────────────────────────── -->
   <footer id="footer">
     <div class="footer-content">
       <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:your-email@example.com">Email</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://github.com/hungly2301"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:ly_h1@denison.edu">Email</a>
+        <a href="https://www.linkedin.com/in/harry-ly-hung/"
+           target="_blank"
+           rel="noopener noreferrer">LinkedIn</a>
+        <a href="accessibility.html">Accessibility</a>
       </div>
       <p class="footer-text">
-        © 2026 Hung Ly. A portfolio of playful digital humanities work.
+        © 2026 Hung Ly · DH 101: Critical Making in the Age of AI · Denison University
       </p>
     </div>
   </footer>
 
+  <!-- ── Scripts ────────────────────────────────────────────────── -->
   <script src="search.js"></script>
   <script>
+    // ── Project Data ──────────────────────────────────────────────
+    // Each object: title, make (label), tag (for filtering),
+    // description, link, and score (optional — remove if you prefer)
     const projectsData = [
       {
-        title: "The real map that shows hidden truths about AI",
-        date: "Week 7",
-        description: "A counter-map revealing Google and Meta’s physical infrastructure, labor sites, and the untold costs of AI.",
-        link: "week07.html"
-      },
-      {
-        title: "A game that makes AI interviews feel unsettlingly real",
-        date: "Week 10",
-        description: "An interactive Twine experience about performance, surveillance, and what it means to answer an AI.",
-        link: "week10.html"
-      },
-      {
-        title: "Surreal bot stories that sell feelings as products",
-        date: "Week 9",
-        description: "A Tracery generator producing strange product descriptions and showing how curation is creative work.",
-        link: "week09.html"
-      },
-      {
-        title: "Reverse engineering artifacts to reveal hidden systems",
-        date: "Week 1",
-        description: "A first week project unpacking how designed objects encode choices and values.",
+        title: "Reverse-Engineering DALL·E",
+        make: "Make 1",
+        tag: "Analysis",
+        description: "A system-level breakdown of how text-to-image AI works — examining training data bias, human labor, and how the interface hides its own complexity.",
         link: "week01.html"
       },
       {
-        title: "Selfies, identity, and what it means to be seen",
-        date: "Week 3",
-        description: "A creative investigation of digital self-representation and networked identity.",
+        title: "Cream-Puff Boys: A Comic About Sweetness and AI Authorship",
+        make: "Make 2",
+        tag: "Comic",
+        description: "An AI-generated comic where I supplied the concept, moral, and direction — and discovered that machines produce formula while humans define meaning.",
+        link: "week02.html"
+      },
+      {
+        title: "Selfie: Digital Identity and the Performed Self",
+        make: "Make 3",
+        tag: "Analysis",
+        description: "A creative investigation into self-representation online — who controls the image, who sees it, and what a selfie reveals about networked identity.",
         link: "week03.html"
       },
       {
-        title: "Comics as storytelling machines",
-        date: "Week 4",
-        description: "Exploring narrative, pacing, and visual meaning through comic design.",
+        title: "Progress Loop: A GIF About Effort Without Completion",
+        make: "Make 4",
+        tag: "GIF",
+        description: "A looping progress bar that fills to 100% and resets — an exploration of how repetition creates meaning, frustration, and a critique of digital labor.",
         link: "week04.html"
       },
       {
-        title: "Text Analysis: How Machines Read",
-        date: "Week 5",
-        description: "A comparison of Voyant and GPT reading Sojourner Truth’s speech and the limits of machine interpretation.",
+        title: "How Machines Read: Voyant and GPT on Sojourner Truth",
+        make: "Make 5",
+        tag: "Analysis",
+        description: "A comparison of two machine-reading tools applied to a speech from 1851 — exposing what computational analysis gains in scale and loses in human weight.",
         link: "week05.html"
       },
       {
-        title: "Reading text at scale with code",
-        date: "Week 6",
-        description: "An introduction to distant reading and computational analysis of language.",
+        title: "Counter-Map: The Physical Infrastructure of Google and Meta",
+        make: "Make 6",
+        tag: "Map",
+        description: "A counter-map placing data center locations and content moderation labor sites in the same visual field — refusing the frame companies use to show only their campuses.",
         link: "week06.html"
       },
       {
-        title: "Networks of knowledge and the power they hide",
-        date: "Week 8",
-        description: "A critical look at how systems and networks shape what gets seen and who has influence.",
+        title: "Networks of Power: Who Owns Your Digital Life",
+        make: "Make 7",
+        tag: "Network",
+        description: "A network diagram of every platform, company, and data type in my digital ecosystem — revealing that I have no node, and power is radial, not distributed.",
+        link: "week07.html"
+      },
+      {
+        title: "The Interview: An AI Interrogation in Two Endings",
+        make: "Make 8",
+        tag: "Game",
+        description: "A Twine game where an AI interviewer evaluates your every hesitation. You are not just being assessed — you are being used to train the next version of the system.",
         link: "week08.html"
       },
       {
-        title: "AI labor exposed: the people behind the system",
-        date: "Week 11",
-        description: "A project exploring the hidden labor that makes AI systems run.",
+        title: "Bot: Strange Product Descriptions for Feelings",
+        make: "Make 9",
+        tag: "Bot",
+        description: "A Tracery grammar generator producing absurd wellness product copy — exploring how curation is its own form of creative labor, even when a bot does the writing.",
+        link: "week09.html"
+      },
+      {
+        title: "The Hidden Labor of AI: Content Moderation and Its Costs",
+        make: "Make 10",
+        tag: "Infographic",
+        description: "An infographic exposing the wages, conditions, and psychological toll of content moderators in the Philippines and Kenya — the people who keep AI platforms safe to use.",
+        link: "week10.html"
+      },
+      {
+        title: "Water & AI: The Hidden Cost of Data Centers",
+        make: "Make 11",
+        tag: "Data Viz",
+        description: "A data map of AI infrastructure water use across Iowa, Arizona, and the Netherlands — arguing that the most important numbers are the ones companies choose not to publish.",
         link: "week11.html"
       },
       {
-        title: "AI's ecological footprint and the cost of compute",
-        date: "Week 12",
-        description: "A research exploration of climate, energy, and the environment of AI.",
+        title: "The Last Human Therapist: A Newspaper from 2047",
+        make: "Make 12",
+        tag: "Fiction",
+        description: "A speculative newspaper profile of Dr. Miriam Osei retiring after human therapy is replaced by ARIA — and the quiet data-ownership clause buried in the legislation that made it free.",
         link: "week12.html"
-      },
-      {
-        title: "Futures of AI and humanity in a changing world",
-        date: "Week 13",
-        description: "A speculative project imagining what AI means for people and society.",
-        link: "week13.html"
-      },
-      {
-        title: "Reflections: My AI learning diary",
-        date: "Diary",
-        description: "Weekly reflections on AI, identity, labor, ecology, and the journey of this course.",
-        link: "reflections.html"
       }
     ];
 
+    // ── Render Cards ──────────────────────────────────────────────
     window.addEventListener('DOMContentLoaded', () => {
       const grid = document.getElementById('grid');
+
       projectsData.forEach(project => {
-        grid.appendChild(createCard(project));
+        const card = createCard(project);  // defined in search.js
+        card.setAttribute('role', 'listitem');
+        grid.appendChild(card);
       });
+
+      // Initialize keyword search (defined in search.js)
       initializeSearch(projectsData);
+
+      // ── Filter button logic ──────────────────────────────────
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.dataset.filter;
+          const cards  = grid.querySelectorAll('.card');
+
+          cards.forEach(card => {
+            const match = filter === 'all' || card.dataset.tag === filter;
+            card.style.display = match ? '' : 'none';
+          });
+
+          // Show/hide no-results
+          const visible = [...cards].filter(c => c.style.display !== 'none');
+          document.getElementById('no-results').style.display =
+            visible.length === 0 ? 'block' : 'none';
+        });
+      });
     });
   </script>
+
 </body>
 </html>
