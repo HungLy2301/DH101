@@ -203,9 +203,9 @@ def create_reflections_page():
           <div class="card-body">
             <div class="card-description">{entry['excerpt']}</div>
             <div class="card-footer">
-              <a href="#" class="btn" type="button">Read Entry</a>
+              <a href="#" class="btn" type="button">Hide Entry</a>
             </div>
-            <div class="reflection-content" style="display:none; margin-top:1rem;">{entry['content']}</div>
+            <div class="reflection-content" style="display:block; margin-top:1rem;">{entry['content']}</div>
           </div>
         </article>
         ''')
