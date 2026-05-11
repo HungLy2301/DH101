@@ -322,6 +322,22 @@ article code {
   font-size: 0.95rem;
 }
 
+.reflection-card {
+  flex-direction: column;
+}
+
+.reflection-card .reflection-content {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 20px;
+  padding: 1.4rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(36, 48, 94, 0.08);
+}
+
+.reflection-card .card-footer {
+  justify-content: flex-start;
+}
+
 article pre {
   background-color: rgba(36, 48, 94, 0.05);
   color: #24305e;
