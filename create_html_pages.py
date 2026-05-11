@@ -8,6 +8,10 @@ weeks = {
         'title': 'Week 1: Reverse Engineering',
         'subtitle': 'Learning to think about embedded systems and decisions'
     },
+    'week02': {
+        'title': 'Week 2: AI & Identity',
+        'subtitle': 'Exploring AI-generated representations of personal identity'
+    },
     'week03': {
         'title': 'Week 3: Selfie & Identity',
         'subtitle': 'Digital self-representation in networked spaces'
@@ -136,9 +140,13 @@ def read_markdown(filename):
 def create_html_page(week_id, title, subtitle):
     """Create HTML page for a week"""
     md_content = read_markdown(week_id)
-    # For now, just parse the first part to avoid complexity
-    content_lines = md_content.split('\n')[1:]  # Skip first header
-    content = '\n'.join(content_lines)
+    if not md_content:
+        content = ''
+    else:
+        lines = md_content.splitlines()
+        if lines and lines[0].startswith('# '):
+            lines = lines[1:]
+        content = markdown_to_html_content('\n'.join(lines)).strip()
     
     html = f'''<!DOCTYPE html>
 <html lang="en">
