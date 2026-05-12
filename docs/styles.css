@@ -547,8 +547,8 @@ main {
 .artifact-frame img { width: 100%; border-radius: 2px; }
 .artifact-frame iframe {
   width: 100%;
-  min-height: 220px;
-  max-height: 340px;
+  min-height: 80%px;
+  max-height: 100%;
   border: none;
   border-radius: 2px;
   background: white;
