@@ -2,3 +2,5 @@
 # Week 1 Reflection
 
 Reflect 1: What counts as “making” in the age of AI? What might be gained/lost when machines participate in making?
+
+In the age of AI, “making” extends beyond traditional hands-on creation to include guiding, prompting, and collaborating with machines. Making can involve defining ideas, shaping prompts, and curating outputs, while the AI executes tasks like generating images or text. When machines participate, we gain speed, scale, and access to possibilities that humans alone might not produce. However, we may lose some control over interpretation, meaning, and originality, since AI lacks understanding or intention. Authorship becomes shared and less visible, and the creative process can feel less personal. At the same time, AI opens space for new forms of collaboration, experimentation, and exploration of ideas, highlighting both the potentials and limits of human-machine creativity.

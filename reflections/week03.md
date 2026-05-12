@@ -2,3 +2,5 @@
 # Week 3 Reflection
 
 Reflect 3: What does “authenticity” mean when identity is co-constructed with AI?
+
+When identity is co constructed with AI, authenticity becomes limited. AI builds identities by combining existing data and visual patterns rather than understanding who a person truly is. Even when humans guide the prompt, the result often reflects surface level traits instead of deeper human qualities. While AI can closely match someone’s appearance with enough detail, it struggles to represent internal values, emotions, and lived experiences. In my case, when I asked AI to show my love for nature, it only added a natural background, ignoring how that value shapes my actions and beliefs. Abstract traits like kindness or feeling fulfilled are also difficult for AI to visualize. Therefore, authenticity in AI generated identity is more about visual accuracy than truly representing the complexity of a real person.
