@@ -421,6 +421,101 @@ footer {
   opacity: 0.85;
 }
 
+.hero-section {
+  background: rgba(255, 255, 255, 0.88);
+  padding: 3rem 2rem;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2.5rem;
+}
+
+.hero-section h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.6rem, 4vw, 4.4rem);
+}
+
+.hero-section p {
+  max-width: 860px;
+  line-height: 1.9;
+  color: #343f67;
+}
+
+.category-section,
+.timeline-section,
+.final-reflection-section,
+.content-section {
+  margin-bottom: 2.5rem;
+}
+
+.category-section h2,
+.timeline-section h2,
+.final-reflection-section h2,
+.content-section h2 {
+  margin-bottom: 1.25rem;
+}
+
+.journey-card {
+  min-height: 260px;
+}
+
+.journey-card .card-body {
+  padding-bottom: 2rem;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(36, 48, 94, 0.08);
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  margin-bottom: 1.25rem;
+}
+
+.page-subtitle {
+  color: #58618c;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+.page-body {
+  margin-top: 1.5rem;
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.content-section ul {
+  margin-left: 1.4rem;
+  list-style: disc;
+}
+
+.content-section li,
+.content-section p {
+  margin-bottom: 1rem;
+}
+
+button,
+.btn {
+  font-weight: 700;
+}
+
 .no-results {
   text-align: center;
   padding: 3rem;
