@@ -3,83 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 6: Text & Distant Reading - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>The Map They Didn't Draw — Make 06</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 06</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 6: Text & Distant Reading</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 6: Text & Distant Reading</h1>
-          <p class="page-subtitle">Computational analysis and textual patterns</p>
-          <div class="page-body">
-            <h2>Summary</h2>
-    <p>This project investigates how distant reading techniques reveal language patterns and meaning across a whole text.</p>
-    <h2>Artifact</h2>
-    <p>Describe the artifact or digital analysis output here. Use images, code snippets, or links to datasets.</p>
-    <p><img src="assets/images/week06-reading.png" alt="Text analysis visualization or data table from distant reading" /> <em>Example of distant reading output with frequency or trend data.</em></p>
-    <h2>Process Notes</h2>
-    <ul>
-    <li>Tools used: text analysis software, scripts, or online readers.</li>
-    <li>Decisions: selected text, defined search terms, and chose visualization techniques.</li>
-    <li>External links: add relevant datasets or research references.</li>
-    </ul>
-    <h2>Reflection</h2>
-    <p>Respond to the prompt and connect distant reading to what it reveals about culture, meaning, and interpretation.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Tools used:</li>
-    <li>AI prompts (summary):</li>
-    <li>What AI generated:</li>
-    <li>What you changed or decided:</li>
-    <li>Sources:</li>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 06 · Week 06</span>
+        <span>Counter-map · Infrastructure</span>
+        <span>Tool: Google My Maps</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">The Map They Didn't Draw</h1>
+      <p class="make-subtitle">
+        A counter-map placing Google and Meta's data centers, headquarters, and content
+        moderation sites in the same visual field. The geography is not incidental.
+      </p>
+    </header>
 
-  </main>
-
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
-      </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
+    <!-- Full-width embedded map -->
+    <div class="artifact-frame" style="margin-bottom: 3rem;">
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1VWQhf7N7qBogZJipxJLx-Z6NUeBFTMU&ehbc=2E312F"
+        width="100%" height="600"
+        style="border: none; border-radius: 2px; background: white;"
+        title="Interactive counter-map of Google and Meta's global AI infrastructure: headquarters, data centers, and content moderation sites"
+        loading="lazy"></iframe>
+      <p class="artifact-caption">
+        Interactive map. Pan, zoom, and click pins for details. Layers: corporate HQs (red), data centers (blue), content moderation sites (orange).
+        <a href="https://www.google.com/maps/d/edit?mid=1VWQhf7N7qBogZJipxJLx-Z6NUeBFTMU" target="_blank" rel="noopener">Open in Google My Maps →</a>
       </p>
     </div>
+
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Process Notes</h2>
+
+        <h3>Sources used</h3>
+        <p style="font-size: 0.95rem;">
+          Three tiers of sources. <strong>Corporate HQs:</strong> Alphabet and Meta
+          investor relations pages, SEC annual filings.
+          <strong>Data centers:</strong> each company's official infrastructure pages
+          cross-referenced with independent trackers (Baxtel.com, dgtlinfra.com) and
+          Data Center Dynamics. Official press releases including Entergy Louisiana's
+          December 2024 announcement supplied investment and energy data for Meta's
+          newest campus.
+        </p>
+        <p style="font-size: 0.95rem;">
+          <strong>Content moderation and labor:</strong> investigative journalism.
+          Core sources: <em>TIME</em>'s 2023 investigation of Meta's Kenya
+          moderators, CNN Business's December 2024 reporting on PTSD diagnoses, a
+          joint Bureau of Investigative Journalism / Foxglove April 2025
+          investigation of Meta's secret Ghana facility, the <em>Washington Post</em>'s
+          2019 investigation of Google's Philippines operations, and Rappler / Coda
+          Story's 2023 feature on YouTube contractors in Manila.
+        </p>
+
+        <h3>What was hardest to find</h3>
+        <p style="font-size: 0.95rem;">
+          The content moderation layer, by a significant margin. Neither Google nor
+          Meta publishes a list of their outsourcing vendors, the physical addresses
+          of their moderation facilities, or contractor wages. Meta did not publicly
+          confirm the name of its Ghana contractor for months after operations
+          began. Google's content moderation supply chain is similarly opaque.
+        </p>
+        <p style="font-size: 0.95rem;">
+          This structural opacity is not accidental. The outsourcing model — tech
+          company contracts a BPO firm, which contracts local subcontractors, which
+          hire workers — is designed to diffuse accountability. The more layers in
+          the chain, the harder it is to assign legal responsibility for working
+          conditions. The data missing from this map is missing precisely because
+          its absence protects the companies that profit from the labor.
+        </p>
+
+        <h3>What surprised me</h3>
+        <p style="font-size: 0.95rem;">
+          The geographic logic of harm concentration. Data centers cluster where
+          energy and land are cheapest and tax abatements largest: rural Iowa,
+          Arctic Sweden, rural Louisiana. Moderation labor clusters where wages are
+          lowest and organized labor is weakest: Philippines, Kenya, Ghana. The
+          pattern is not random — it follows and reinforces existing global
+          inequalities. Google's data center in The Dalles, Oregon (population
+          16,000) now consumes 29% of the city's total water supply.
+        </p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <p>
+          This map makes one argument: AI is not virtual. It is a system of physical
+          extraction whose costs are distributed globally while profits pool in a
+          fifteen-mile radius of the San Francisco Peninsula.
+        </p>
+
+        <p>
+          Two headquarters coordinate a planetary infrastructure of server farms in
+          Iowa cornfields and Arctic forests, and moderation offices in Manila and
+          Accra that neither Google nor Meta will officially locate on any map they
+          publish. That refusal is itself a design choice. Meta did not publicly
+          name its Ghana contractor for nearly a year after operations began. The
+          geography is not incidental; it follows a single optimization: push costs
+          to wherever accountability is weakest.
+        </p>
+
+        <p>
+          If I had mapped only data centers, I would have reproduced something
+          close to what Meta already publishes: a polished map of campuses with
+          renewable energy statistics. My map refuses that frame. Placing moderation
+          labor in the same visual field as physical infrastructure insists that the
+          human cost of making AI safe be counted alongside the machine cost of
+          running it.
+        </p>
+
+        <p>
+          D'Ignazio and Klein argue in <em>Data Feminism</em> that power operates
+          through what is systematically obscured, not only through what is shown.
+          Google and Meta's own maps are acts of curated visibility. This
+          counter-map attempts the opposite. What remains missing are the names of
+          individual workers, their wages, and the NDAs they signed. That data has
+          never been collected because collecting it would force accountability.
+          The missing data is the argument.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Map tool</dt><dd>Google My Maps (mymaps.google.com)</dd></div>
+        <div><dt>Primary &amp; official sources</dt>
+          <dd>Google Data Centers (datacenters.google) · Meta Data Centers (datacenters.atmeta.com) · Alphabet IR &amp; SEC filings · Meta IR &amp; SEC filings · Entergy Louisiana press release on Meta Richland Parish (Dec 2024)</dd></div>
+        <div><dt>Infrastructure research</dt>
+          <dd>Baxtel.com · dgtlinfra.com · Data Center Dynamics · Data &amp; Society · Fortune (Google data center reporting) · Inside Climate News · Dutch Data Center Association</dd></div>
+        <div><dt>Content moderation &amp; labor investigations</dt>
+          <dd>TIME (Meta Kenya, March 2023) · CNN Business (Meta Kenya PTSD, Dec 2024) · Bureau of Investigative Journalism (Ghana, April 2025) · Foxglove (Ghana, April 2025) · Washington Post (Philippines, July 2019) · Rappler/Coda Story (March 2023) · Al Jazeera (April 2025) · Business &amp; Human Rights Resource Centre · IHRB · CorpWatch</dd></div>
+        <div><dt>Theoretical frameworks</dt>
+          <dd>Crawford, K. (2021). <em>Atlas of AI.</em> Yale UP. · D'Ignazio, C., &amp; Klein, L. F. (2020). <em>Data Feminism.</em> MIT Press. · AI Now Institute Annual Reports.</dd></div>
+        <div><dt>AI assistance disclosure</dt>
+          <dd>Claude (Anthropic) was used in the research phase to assist with organizing data points, compiling cited facts about data center locations and labor conditions, and drafting the research documentation based on my direction and source materials. All factual claims were verified against the primary and investigative sources above. Final editorial decisions, map design choices, and argumentative framing are my own.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 06</p>
+      <h3>What do we gain/lose when machines "read" literature for us?</h3>
+      <p>
+        When machines read literature, they change how we look at it. Instead of
+        moving slowly through each sentence, they scan everything at once. They
+        show repetition, patterns, and structure. This can help us notice things
+        we might overlook. But something important is missing. Reading is not
+        just about patterns. It is also about reaction. Sometimes a line makes us
+        pause, remember something personal, or feel uncomfortable. A machine
+        does not pause or feel anything. It processes information, but it does
+        not respond to it. So we gain a clearer view of structure, but we lose
+        the personal side of reading. Machines can organize a text, but they
+        cannot experience it.
+      </p>
+    </section>
+
+    <a href="make7.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>07 — I Have No Node</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
+    </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

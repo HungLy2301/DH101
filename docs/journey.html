@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Journey — Hung Ly</title>
+  <meta name="description" content="Twelve makes, twelve weeks, one argument. A semester of critical making in the age of AI.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>My AI Journey</span>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">/ The Journey</p>
+      <h1 class="hero-title">Twelve weeks.<br><em>One argument, told twelve ways.</em></h1>
+      <div class="hero-intro">
+        <p>
+          Each project below began as a weekly assignment and ended as a piece of an argument
+          I didn't know I was making until the last few weeks. They are presented in the order
+          I made them so the evolution is visible. Click any card to see the artifact, my
+          reflection on it, and the full attribution of how it was made.
+        </p>
+        <p>
+          When you reach the end, the <a href="final-reflection.html">final reflection</a>
+          ties them together.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Filter + Search ──────────────────────────────── -->
+    <div class="section-header">
+      <span class="section-num">/ 12 makes</span>
+      <h2>The full archive</h2>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter projects by type">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Analysis">Analysis</button>
+      <button class="filter-btn" data-filter="Identity">Identity</button>
+      <button class="filter-btn" data-filter="Comic">Comic</button>
+      <button class="filter-btn" data-filter="GIF">GIF</button>
+      <button class="filter-btn" data-filter="Map">Map</button>
+      <button class="filter-btn" data-filter="Network">Network</button>
+      <button class="filter-btn" data-filter="Bot">Bot</button>
+      <button class="filter-btn" data-filter="Infographic">Infographic</button>
+      <button class="filter-btn" data-filter="Game">Game</button>
+      <button class="filter-btn" data-filter="Data Viz">Data Viz</button>
+      <button class="filter-btn" data-filter="Fiction">Fiction</button>
+    </div>
+
+    <input type="search" id="search-box" class="search-box"
+           placeholder="Search by title, theme, or medium — try 'labor', 'map', or 'water'"
+           aria-label="Search projects">
+
+    <div id="no-results" class="no-results" style="display: none;" role="status" aria-live="polite">
+      <p>No projects match. Try a different keyword.</p>
+    </div>
+
+    <!-- ── Project Grid ─────────────────────────────────── -->
+    <div class="project-grid">
+
+      <a href="makes/make1.html" class="project-card" data-tag="Analysis">
+        <div class="project-card-image no-image">01</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 01</span>
+            <span class="project-card-tag">Analysis</span>
+          </div>
+          <h3 class="project-card-title">The Anatomy of an Image</h3>
+          <p class="project-card-desc">
+            A system-level breakdown of DALL·E — examining the training data,
+            human labor, and design choices that the interface hides.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make2.html" class="project-card" data-tag="Identity">
+        <div class="project-card-image">
+          <img src="assets/week02-_selfie.png" alt="AI-generated portrait of Hung Ly in a student setting" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 02</span>
+            <span class="project-card-tag">Identity</span>
+          </div>
+          <h3 class="project-card-title">Two Selves, One Algorithm</h3>
+          <p class="project-card-desc">
+            What happens when AI tries to picture who you are — and what it
+            can't see about you no matter how specific the prompt gets.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make3.html" class="project-card" data-tag="Comic">
+        <div class="project-card-image">
+          <img src="assets/comic-first-prompt.jpg" alt="Comic panels titled 'Cream-Puff Boys: Saving the World with Sweetness'" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 03</span>
+            <span class="project-card-tag">Comic</span>
+          </div>
+          <h3 class="project-card-title">Cream-Puff Boys: A Story About Formula</h3>
+          <p class="project-card-desc">
+            An AI-generated comic that revealed something about AI itself: machines produce
+            recognizable patterns; humans still decide what those patterns are for.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make4.html" class="project-card" data-tag="GIF">
+        <div class="project-card-image">
+          <img src="assets/progress_loop.gif" alt="Animated progress bar filling from 0% to 100% and resetting" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 04</span>
+            <span class="project-card-tag">GIF</span>
+          </div>
+          <h3 class="project-card-title">Progress Loop</h3>
+          <p class="project-card-desc">
+            A bar fills to 100% and resets, over and over. A small loop about effort
+            that doesn't accumulate, and the invisible labor it quietly resembles.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make5.html" class="project-card" data-tag="Analysis">
+        <div class="project-card-image">
+          <img src="assets/voyant-cirrus.png" alt="Voyant word cloud showing 'woman', 'rights', 'sojourner' as dominant terms" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 05</span>
+            <span class="project-card-tag">Text analysis</span>
+          </div>
+          <h3 class="project-card-title">What Voyant and GPT Can't Feel</h3>
+          <p class="project-card-desc">
+            Two machines reading Sojourner Truth's 1851 speech, and what each one
+            gains in scale and loses in human weight.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make6.html" class="project-card" data-tag="Map">
+        <div class="project-card-image no-image" style="font-size: 3rem;">⌖</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 06</span>
+            <span class="project-card-tag">Counter-map</span>
+          </div>
+          <h3 class="project-card-title">The Map They Didn't Draw</h3>
+          <p class="project-card-desc">
+            A counter-map placing Google and Meta's data centers and content moderation
+            sites in the same visual field — refusing the frame the companies use.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make7.html" class="project-card" data-tag="Network">
+        <div class="project-card-image">
+          <img src="assets/kumu-map.png" alt="Network graph showing app relationships clustered around Google, Apple, Meta, Microsoft" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 07</span>
+            <span class="project-card-tag">Network</span>
+          </div>
+          <h3 class="project-card-title">I Have No Node</h3>
+          <p class="project-card-desc">
+            A network diagram of every platform, company, and data type in my digital
+            ecosystem — and what it means that the user has no node at all.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make8.html" class="project-card" data-tag="Bot">
+        <div class="project-card-image">
+          <img src="assets/tracery-screenshot.png" alt="Tracery editor with grammar rules for surreal product descriptions" loading="lazy">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 08</span>
+            <span class="project-card-tag">Bot</span>
+          </div>
+          <h3 class="project-card-title">Strange Inventory</h3>
+          <p class="project-card-desc">
+            A Tracery generator for products that don't exist — surreal listings
+            for emotional objects. The generator runs. I decide what's worth keeping.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make9.html" class="project-card" data-tag="Infographic">
+        <div class="project-card-image">
+          <img src="assets/invisible-workforce-infographic.png" alt="Infographic titled 'The Invisible Workforce'" loading="lazy" style="object-position: top;">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 09</span>
+            <span class="project-card-tag">Infographic</span>
+          </div>
+          <h3 class="project-card-title">The Invisible Workforce</h3>
+          <p class="project-card-desc">
+            An infographic on the wages, conditions, and structural concealment
+            of content moderators behind platforms like Meta.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make10.html" class="project-card" data-tag="Game">
+        <div class="project-card-image no-image" style="font-size: 3rem;">▮</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 10</span>
+            <span class="project-card-tag">Game</span>
+          </div>
+          <h3 class="project-card-title">The Interview</h3>
+          <p class="project-card-desc">
+            A Twine game where an AI interviewer logs your every hesitation. You are
+            not just being evaluated — you are being used to train the next version.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make11.html" class="project-card" data-tag="Data Viz">
+        <div class="project-card-image no-image" style="font-size: 2.5rem;">≈</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 11</span>
+            <span class="project-card-tag">Data viz</span>
+          </div>
+          <h3 class="project-card-title">What the Cloud Drinks</h3>
+          <p class="project-card-desc">
+            A Datawrapper map of AI water use across Iowa, Arizona, and the Netherlands —
+            and the argument that the most important numbers are the ones companies hide.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make12.html" class="project-card" data-tag="Fiction">
+        <div class="project-card-image no-image">2047</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">Week 12</span>
+            <span class="project-card-tag">Speculative fiction</span>
+          </div>
+          <h3 class="project-card-title">The Last Human Therapist</h3>
+          <p class="project-card-desc">
+            A newspaper from 2047 about the retirement of the last human psychotherapist —
+            and the data-ownership clause buried in the law that made universal AI therapy free.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Final reflection callout -->
+    <a href="final-reflection.html" class="next-link" style="margin-top: 4rem;">
+      <div>
+        <p class="eyebrow">Final piece →</p>
+        <strong>The Final Reflection: What the Machine Doesn't Show You</strong>
+        <p style="font-size: 0.92rem; color: var(--ink-soft); margin: 0.5rem 0 0 0; max-width: 60ch;">
+          A long-form essay weaving the 12 makes into a single argument about
+          power, accountability, and what it means to be human in the age of AI.
+        </p>
+      </div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint); font-size: 1.5rem;">→</span>
+    </a>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="final-reflection.html">Final Reflection</a></li>
+            <li><a href="sustainability-accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/hungly2301" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Hung Ly · DH 101: Critical Making in the Age of AI</span>
+        <span>Denison University · Granville, OH</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

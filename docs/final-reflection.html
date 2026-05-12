@@ -3,66 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Reflection - Hung Ly</title>
+  <title>Final Reflection — Hung Ly</title>
+  <meta name="description" content="Final reflection essay on making, power, and accountability in the age of AI.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="final-reflection-page">
+<body>
 
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
         <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
-  <main>
+  <main class="page-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span>
+      <a href="journey.html">My AI Journey</a><span>/</span>
+      <span>Final Reflection</span>
+    </nav>
 
-    <section class="hero-section">
-      <h1>Final Reflection</h1>
-      <p>My final argument about what it means to be human in the age of AI.</p>
-    </section>
+    <a href="journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="content-section">
-      <h2>In-Between Futures</h2>
-      <p>AI futures feel most honest when they are neither pure utopia nor pure dystopia. The future I imagine is one where headline numbers look good while the costs are buried in terms of service clauses and hidden labor.</p>
-    </section>
+    <p class="eyebrow">/ Final Reflection · ~950 words</p>
+    <h1 class="hero-title" style="margin-bottom: 1.5rem;">What the Machine Doesn't Show You</h1>
+    <p class="lead" style="font-size: 1.3rem; margin-bottom: 4rem;">
+      A reflection on making, power, and accountability in the age of AI.
+    </p>
 
-    <section class="content-section">
-      <h2>What This Reveals About Us</h2>
-      <p>These visions reveal what we are already willing to accept. They show whether we care more about convenience than accountability, more about cool interactions than the people and resources behind them.</p>
-    </section>
+    <article class="essay">
+      <p>
+        I came into this semester thinking about AI the way most people do — as a tool.
+        Something you prompt, something that outputs, something useful or occasionally
+        frustrating. I left thinking about it as a system: a set of relationships
+        between labor, infrastructure, capital, and meaning that is designed, at nearly
+        every level, to make itself hard to see.
+      </p>
 
-    <section class="content-section">
-      <h2>Reading the Evidence</h2>
-      <p>Scholars like Bender et al. taught me to ask where datasets come from. D'Ignazio & Klein showed me that power is coded into every data collection choice. Crawford reminded me that AI is built on labor and environmental cost, not just clever math.</p>
-    </section>
+      <p>
+        That shift did not happen in a single moment. It accumulated — through a comic,
+        a GIF, a game, a map, a network diagram, a speculative newspaper from 2047 —
+        and each piece cracked the same assumption from a different angle.
+      </p>
 
-    <section class="content-section"><blockquote><strong>Markdown help:</strong> See <a href="../pages/markdown-guide.md" target="_blank">markdown-guide.md</a> for formatting tips and a reflection template.</blockquote>
-    <h1>Week 13 Reflection</h1>
-    <p>Reflect 13: Do we imagine AI futures as utopian, dystopian, or something in between? What do those visions reveal about us?</p>
-    <p>I tend to imagine AI futures as in between, and I think that's harder to sit with than either extreme. Pure dystopia lets you off the hook; pure utopia does the same in reverse. What unsettles me more is a future where the headline numbers are good and the cost is buried in a terms of service clause nobody read. Working on this project clarified something: the futures we imagine reveal what we have already accepted. The believable 2047 I built was just 2025, extended forward until it became impossible to ignore.</p></section>
-    
+      <h2>The first crack: who is making what</h2>
 
+      <p>
+        The first crack was small. When I built a comic by describing a concept to an
+        AI image generator and watching it execute, I noticed something in the gap
+        between what I intended and what the machine produced. The AI delivered a
+        villain, a dramatic confrontation, an instant redemption — not because those
+        were the best choices for the story, but because those are the structures most
+        densely represented in its training data. It was producing formula, not meaning.
+        I was the one who had to decide what the formula was <em>for</em>. That division
+        — machine executes, human defines — felt at first like a clean arrangement. It
+        became, over the course of the semester, considerably more complicated.
+      </p>
+
+      <p>
+        When I ran Sojourner Truth's 1851 speech through two different reading tools, I
+        encountered the same division at a different scale. One tool counted and mapped
+        word frequency; it could show that <em>rights</em> peaks in the middle of the
+        text and <em>woman</em> rises toward the end, but it could not feel the grief
+        in the line about children sold into slavery. The other tool generated fluent
+        literary interpretation, organized themes, articulated connections — and
+        performed understanding without demonstrating it. Neither tool experienced the
+        historical weight of a formerly enslaved woman demanding recognition from a
+        room that doubted her humanity. I realized that machines read according to
+        their design: they can reveal structure at speed and scale, but human reading
+        is still what decides why the structure matters.
+      </p>
+
+      <h2>From aesthetic question to political one</h2>
+
+      <p>
+        What changed over the semester was my understanding of what that human
+        responsibility actually requires. Early on, I framed it as an aesthetic
+        question — humans set the limits, humans interpret the output, humans give
+        the work meaning. That framing is true but insufficient. Kate Crawford, in
+        <em>Atlas of AI</em>, argues that AI systems are not neutral intelligences
+        but a "registry of power" — they encode the priorities of the people who
+        built them, the data they selected, and the communities they excluded or
+        extracted from (Crawford, 2021). The interface hides this. Crawford's term
+        for the dominant metaphor is the "cloud": it presents infrastructure as
+        weightless and consequence-free, when infrastructure is, in fact, the
+        heaviest thing in the system.
+      </p>
+
+      <p>
+        I spent the second half of the semester trying to map what the cloud
+        conceals. When I built a network of my own digital ecosystem — every app,
+        every platform, every data type flowing between companies — I discovered
+        that I had no node. My location, my prompts, my professional history, my
+        social graph all appeared in the network as abstract data types, not as a
+        person with agency. The companies were visible; the advertisers who
+        purchased profiles built from my behavior were not. The choice of center
+        node in any network, I came to understand, is always a political choice.
+        D'Ignazio and Klein argue that power operates through what is systematically
+        obscured, not only through what is shown (D'Ignazio &amp; Klein, 2020). The
+        map Google publishes of its own infrastructure is an act of curated
+        visibility. Every counter-map is an argument about what the official version
+        leaves out.
+      </p>
+
+      <h2>The workers and the water</h2>
+
+      <p>
+        The workers were left out. When I researched the content moderation systems
+        that keep AI-mediated platforms functional, I found a labor arrangement that
+        Sarah Roberts, in <em>Behind the Screen</em>, describes with precision:
+        "plausible deniability." Platforms outsource traumatic reviewing work
+        through chains of contractors long enough to diffuse legal accountability
+        (Roberts, 2019). The workers — in the Philippines, in Kenya, in Ghana —
+        view beheadings and child abuse so that the interface stays clean and the
+        company stays insulated. Mary Gray and Siddharth Suri, in <em>Ghost Work</em>,
+        describe the broader pattern: on-demand labor that is completed just-in-time
+        and then disappears from the interface, invisible to the user, unaccountable
+        to the platform (Gray &amp; Suri, 2019). This is not an oversight in AI
+        systems. It is structural. The invisibility is load-bearing.
+      </p>
+
+      <p>
+        When I built a game that put the player in front of an AI interviewer, I
+        tried to make that structural condition <em>felt</em>. The game tells you,
+        midway through, that your hesitations will be used to train the next version
+        of the system. You are not just being evaluated — you are being used. The
+        measured pauses logged in decimal seconds, the percentile rankings, the data
+        retention clause: these are the procedural argument. What the game is really
+        saying is that the AI interview is not a conversation. It is an extraction —
+        the same extraction, at smaller scale, that content moderators perform when
+        they label traumatic content that simultaneously reviews it and trains the AI
+        being built to replace them.
+      </p>
+
+      <h2>The future is already here</h2>
+
+      <p>
+        The speculative piece I wrote at the end of the semester imagined a 2047 in
+        which AI therapy has replaced human psychotherapy — and where the emotional
+        data disclosed in those sessions is licensed, under Section 14(c) of a
+        fictional federal act, for commercial use. The ad at the bottom of the
+        fictional newspaper page reads: <em>"Always listening. Always learning. Always
+        here — powered by a decade of real human insight."</em> The phrase "real human
+        insight" is doing the work: it acknowledges, in the language of a marketing
+        slogan, that the system is built on the disclosed intimacies of patients who
+        may not have understood that their grief was becoming a product.
+      </p>
+
+      <h2>Refusing the cloud metaphor</h2>
+
+      <p>
+        What I think it means to be human in the age of AI is to refuse the cloud
+        metaphor — not to reject AI, but to insist on seeing it whole. The interface
+        is designed to make generation feel clean, effortless, consequence-free. The
+        semester was an exercise in looking behind the interface: at the training
+        data it laundered into neutral outputs, at the workers it made invisible, at
+        the water it drank from communities that had no say, at the emotional data
+        it is already positioned to commodify. The machine can automate at scale,
+        generate at speed, and optimize relentlessly. It cannot hold itself
+        accountable. That remains, entirely, a human responsibility — and one that
+        requires, first, being willing to see what the system was designed to hide.
+      </p>
+    </article>
+
+    <!-- References -->
+    <div class="references">
+      <h2>References</h2>
+      <p>Crawford, K. (2021). <em>Atlas of AI: Power, politics, and the planetary costs of artificial intelligence.</em> Yale University Press.</p>
+      <p>D'Ignazio, C., &amp; Klein, L. F. (2020). <em>Data feminism.</em> MIT Press.</p>
+      <p>Gray, M. L., &amp; Suri, S. (2019). <em>Ghost work: How to stop Silicon Valley from building a new global underclass.</em> Houghton Mifflin Harcourt.</p>
+      <p>Roberts, S. T. (2019). <em>Behind the screen: Content moderation in the shadows of social media.</em> Yale University Press.</p>
+    </div>
+
+    <a href="journey.html" class="next-link" style="margin-top: 4rem;">
+      <div>
+        <p class="eyebrow">Back to →</p>
+        <strong>My AI Journey · All 12 makes</strong>
+      </div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="journey.html">My AI Journey</a></li>
+          <li><a href="ethics.html">Ethics</a></li><li><a href="sustainability-accessibility.html">Accessibility</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/hungly2301" target="_blank" rel="noopener">GitHub</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom">
+        <span>© 2026 Hung Ly · DH 101</span><span>Denison University</span>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

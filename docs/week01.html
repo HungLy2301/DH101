@@ -3,69 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 1: Reverse Engineering - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>The Anatomy of an Image — Make 01</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
+<body>
 
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span>
+      <span>Make 01</span>
+    </nav>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 1: Reverse Engineering</span>
-    </section>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 1: Reverse Engineering</h1>
-          <p class="page-subtitle">Learning to think about embedded systems and decisions</p>
-          <div class="page-body">
-            <h2>The Artifact</h2>
-    <p><a href="https://openai.com/dall-e" target="_blank">DALL·E</a>.</li></p>
-    <h2>Prompt → model → image pipeline</h2>
-    <h2>Process Notes</h2>
-    <p>1. What Is Being Made? DALL·E produces synthetic images based on text prompts provided by users. The output can be illustrations, paintings, posters, or realistic scenes that did not previously exist. 2. What Is the Project Made From? (Data) The project is built from large scale image and text data used to train the model. These data include descriptions of images and visual patterns that help the system learn how words relate to visual elements. What is missing are the lived intentions, emotions, and personal meanings behind images. DALL·E's training data almost certainly reflects the biases of its sources: predominantly English-language captions, Western aesthetic conventions, and images that were already on the public web. What is excluded are images behind paywalls, images from communities that don't widely publish online, non-Western artistic traditions, and any visual knowledge that was never digitized. This has documented consequences: early image models consistently underrepresented darker skin tones, non-Western dress, and disability — not because of a single design decision, but because those images were statistically underrepresented in the training corpus. The pipeline from "internet images" to "trained model" launders those absences into outputs that feel neutral but aren't. 3. Tools, Algorithms, or Systems DALL·E uses a text to image generation model that translates prompts into images. ChatGPT plays a guiding role by expanding and refining prompts for users. Much of the image generation process is automated, but guardrails and prompt interpretation are shaped by human design choices and policies. 4. Human Labor & Decisions Humans collected and curated training data, designed the model architecture, and set safety limits. Human judgment determines what the system is allowed to generate and what is blocked. Even though the machine creates the final image, people shape the system's boundaries and creative direction. 5. Design as Argument The interface makes image creation feel easy and playful, which hides the complexity and labor behind the system. It makes creativity feel accessible while making the underlying data sources and power structures harder to see.</p>
-    <h2>Reflection</h2>
-    <p>In DALL·E, making is not a single act of drawing or designing, but a layered process involving prompts, models, data, and interface design. Making happens when users describe ideas, when ChatGPT reshapes those ideas into prompts, and when the model generates images based on learned patterns. When machines participate in making, creativity becomes shared between humans and systems. The machine can generate visuals quickly and at scale, but it does not understand meaning or intention the way humans do. Human values still shape what the machine can create, through training choices, safety rules, and interface design. As a result, making with AI shifts authorship and creativity into a collaborative but uneven relationship, where the machine produces outputs while humans define the limits, goals, and meanings behind them.</p>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 01 · Week 01</span>
+        <span>Reverse-engineering · Analysis</span>
+        <span>Subject: DALL·E</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">The Anatomy of an Image</h1>
+      <p class="make-subtitle">
+        What is actually happening when DALL·E turns a sentence into a picture?
+        A system-level breakdown of data, labor, and the choices the interface hides.
+      </p>
+    </header>
 
+    <div class="make-grid">
+
+      <!-- THE ARTIFACT -->
+      <section class="make-artifact" aria-label="The artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">The Artifact</h2>
+        <div class="artifact-frame" style="padding: 2rem;">
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-soft); margin: 0;">
+            Project examined:<br>
+            <a href="https://openai.com/dall-e" target="_blank" rel="noopener" style="font-size: 1.1rem;">openai.com/dall-e</a>
+          </p>
+          <hr style="border: none; border-top: 1px solid var(--border); margin: 1.5rem 0;">
+
+          <p style="font-family: var(--font-display); font-size: 1.4rem; font-style: italic; color: var(--ink); margin: 0;">
+            Prompt → model → image
+          </p>
+
+          <p style="font-size: 0.95rem; color: var(--ink-soft); margin-top: 1.5rem;">
+            <strong style="color: var(--ink);">Output:</strong> Synthetic images from text prompts.<br>
+            <strong style="color: var(--ink);">Data:</strong> Web-scraped image-text pairs.<br>
+            <strong style="color: var(--ink);">Tools:</strong> Text-to-image model + ChatGPT guardrails.<br>
+            <strong style="color: var(--ink);">Labor:</strong> Curation, training, moderation, RLHF.<br>
+            <strong style="color: var(--ink);">Argument:</strong> The interface makes generation feel playful while hiding the data sources and power structures behind it.
+          </p>
+        </div>
+        <p class="artifact-caption">Pipeline diagram: prompt → model → image.</p>
+      </section>
+
+      <!-- YOUR TAKE -->
+      <section class="make-reflection" aria-label="Your take">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>What is being made</h3>
+        <p>
+          DALL·E produces synthetic images based on text prompts — illustrations, paintings,
+          posters, realistic scenes that did not previously exist. The interface presents
+          this as a creative tool. The reality is a layered system in which prompts,
+          models, training data, and moderation policies all participate in producing
+          the output.
+        </p>
+
+        <h3>The data is the argument</h3>
+        <p>
+          DALL·E's training data reflects the biases of its sources: predominantly
+          English-language captions, Western aesthetic conventions, and images that
+          were already on the public web. What is excluded — images behind paywalls,
+          images from communities that don't widely publish online, non-Western
+          artistic traditions, any visual knowledge that was never digitized — gets
+          laundered into outputs that feel neutral but aren't. Early image models
+          consistently underrepresented darker skin tones, non-Western dress, and
+          disability. This is not a single design decision. It is the statistical
+          residue of training.
+        </p>
+
+        <h3>Human labor &amp; decisions</h3>
+        <p>
+          Humans collected the training data. Humans curated and labeled it. Humans
+          designed the model architecture, set safety limits, and decide what the
+          system is allowed to generate. The machine produces the final image, but
+          people shape the system's boundaries and creative direction.
+        </p>
+
+        <h3>Design as argument</h3>
+        <p>
+          The interface makes image creation feel easy and playful. That ease is the
+          design's central claim: creativity is democratized, accessible,
+          consequence-free. The ease also conceals the data sources, the labor, the
+          moderation policies, and the power structures that make the output possible.
+          DALL·E doesn't just generate images. It generates a particular relationship
+          to creativity — one in which the conditions of production are invisible by
+          default.
+        </p>
+
+        <h3>What counts as "making"</h3>
+        <p>
+          In DALL·E, making is not a single act of drawing or designing, but a layered
+          process. It happens when users describe ideas, when ChatGPT reshapes those
+          ideas into prompts, and when the model generates images based on learned
+          patterns. When machines participate, creativity becomes shared between
+          humans and systems. Human values still shape what the machine can create —
+          through training choices, safety rules, and interface design. Making with
+          AI shifts authorship into a collaborative but uneven relationship: the
+          machine produces outputs while humans define the limits, goals, and
+          meanings behind them.
+        </p>
+      </section>
+    </div>
+
+    <!-- ATTRIBUTION BOX -->
+    <section class="attribution" aria-label="Attribution and AI use">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Tools used</dt>
+          <dd>OpenAI documentation, DALL·E interface (subject of analysis only, not used to generate), Claude AI by Anthropic (research synthesis)</dd></div>
+        <div><dt>AI prompts (summary)</dt>
+          <dd>I asked Claude to help organize the pipeline diagram structure and to surface documented research on training-data bias in text-to-image models. I verified all factual claims against original sources before inclusion.</dd></div>
+        <div><dt>What AI generated</dt>
+          <dd>Structural suggestion for the five-part analysis framework (output, data, tools, labor, design). Citations to research on training-data underrepresentation — which I verified independently.</dd></div>
+        <div><dt>What I changed or decided</dt>
+          <dd>The argument about training data laundering absences into "neutral" outputs is my own framing. All reflection prose is mine. The decision to treat the interface itself as an argument (rather than just analyzing the technical pipeline) is mine.</dd></div>
+        <div><dt>Sources</dt>
+          <dd>OpenAI public documentation; Crawford, K. (2021), <em>Atlas of AI</em>, Yale University Press, for theoretical framework.</dd></div>
+      </dl>
+    </section>
+
+    <!-- WEEKLY REFLECTION -->
+    <section class="weekly-reflection" aria-label="Weekly reflection">
+      <p class="eyebrow">Weekly reflection · Week 01</p>
+      <h3>What counts as "making" in the age of AI?</h3>
+      <p>
+        In the age of AI, "making" extends beyond traditional hands-on creation to
+        include guiding, prompting, and collaborating with machines. Making can
+        involve defining ideas, shaping prompts, and curating outputs, while the AI
+        executes tasks like generating images or text. When machines participate, we
+        gain speed, scale, and access to possibilities that humans alone might not
+        produce. However, we may lose some control over interpretation, meaning, and
+        originality, since AI lacks understanding or intention. Authorship becomes
+        shared and less visible, and the creative process can feel less personal. At
+        the same time, AI opens space for new forms of collaboration, experimentation,
+        and exploration of ideas, highlighting both the potentials and limits of
+        human-machine creativity.
+      </p>
+    </section>
+
+    <!-- NEXT -->
+    <a href="make2.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>02 — Two Selves, One Algorithm</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Hung Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>

@@ -3,65 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethics - Hung Ly</title>
+  <title>Ethics — Hung Ly</title>
+  <meta name="description" content="Ethical considerations of AI: bias, labor, power, and the gap between an interface and its consequences.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="ethics-page">
+<body>
 
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="ethics.html" aria-current="page">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
-  <main>
+  <main class="page-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Ethics</span>
+    </nav>
 
-    <section class="hero-section">
-      <h1>Ethics</h1>
-      <p>This page reflects on bias, labor, transparency, and the ethical questions that guided the semester.</p>
-    </section>
+    <p class="eyebrow">/ Ethics</p>
+    <h1>What it costs.</h1>
+    <p class="lead">
+      An interface is not the whole system. The questions on this page are the
+      questions every project on this site is trying, in different forms, to ask.
+    </p>
 
-    <section class="content-section">
-      <h2>Ethical Commitments</h2>
-      <ul>
-        <li>Disclosed AI contributions openly across the site.</li>
-        <li>Focused on human labor and environmental cost rather than celebrating only capability.</li>
-        <li>Built the site with accessibility and sustainability in mind.</li>
-      </ul>
-    </section>
+    <h2>Bias is not a bug</h2>
 
-    <section class="content-section">
-      <h2>Readings That Shaped the Work</h2>
-      <p>The portfolio draws on ethics and AI scholarship, including Bender et al. on dataset provenance, D'Ignazio & Klein on data feminism and power, and Crawford on the labor and environmental costs of machine intelligence.</p>
-    </section>
+    <p>
+      The biases of AI systems are not glitches in otherwise neutral machines.
+      They are the distribution of the training data, expressed as output. When
+      DALL·E produces images that consistently underrepresent darker skin tones,
+      non-Western dress, and disability, it is not because the model "got it
+      wrong." It is because those images were statistically underrepresented in
+      the data the model was trained on. Crawford (2021) calls this the
+      "registry of power" — AI systems encode the priorities of the people who
+      built them, the data they selected, and the communities they excluded.
+    </p>
 
-    <section class="content-section">
-      <h2>What This Means</h2>
-      <p>Ethics in AI is not just about whether a model generates useful output. It is about who builds the model, whose labor it relies on, whose water it consumes, and what values are encoded in the decisions we call "neutral." This portfolio aims to make those questions visible.</p>
-    </section>
-    
+    <p>
+      Bender, Gebru, McMillan-Major, and Shmitchell (2021) argue, in their
+      paper on the dangers of large language models, that fluency is itself a
+      kind of risk. When a system produces text that sounds authoritative,
+      users tend to trust it — even when it is wrong, biased, or simply
+      regurgitating the most common training-data pattern. The danger is not
+      that the AI lies. The danger is that the AI sounds so coherent we forget
+      to ask whether it knows anything.
+    </p>
 
+    <h2>The labor problem</h2>
+
+    <p>
+      The most persistent ethical thread across this semester was labor. The
+      tools I used — language models, image generators, content platforms —
+      are all maintained by workers whose conditions are rarely disclosed.
+      Sarah Roberts (2019) documents the system she calls "commercial content
+      moderation": platforms outsource the work of reviewing traumatic
+      material through chains of contractors long enough to make legal
+      accountability impossible. The moderators see beheadings, child abuse,
+      and torture so that the interface stays clean. They are paid as little
+      as $350 to $480 per year in the Philippines while the platforms they
+      protect generate hundreds of billions in revenue.
+    </p>
+
+    <p>
+      Mary Gray and Siddharth Suri (2019) extend this analysis to the broader
+      "ghost work" economy: data labelers, content reviewers, transcription
+      workers — all the human labor that makes AI systems appear to work
+      autonomously. The on-demand structure is the point. Workers complete
+      tasks that disappear from the interface the moment they're done. They
+      are simultaneously the people making the AI work and the people whose
+      work the AI is designed to replace.
+    </p>
+
+    <p>
+      My infographic on the invisible workforce (Make 9) and my counter-map of
+      Google and Meta's infrastructure (Make 6) were both attempts to insist
+      that this labor be visible. Roberts calls the outsourcing structure
+      "plausible deniability." The phrase is exact, and I have come back to
+      it again and again.
+    </p>
+
+    <h2>Visualization is political</h2>
+
+    <p>
+      D'Ignazio and Klein (2020), in <em>Data Feminism</em>, make a point that
+      shaped how I built every visualization this semester: power operates
+      through what is systematically obscured, not only through what is shown.
+      The map a company publishes of its own infrastructure is an act of
+      curated visibility. The decision about what to put at the center of a
+      visualization is never neutral — it determines what relationships become
+      visible and what remains obscured.
+    </p>
+
+    <p>
+      When I built a network of my digital ecosystem, I had to choose what to
+      center. I chose corporations rather than myself because centering the user
+      would have implied a kind of agency the data does not support. I am not
+      the customer; I am the product. The choice of center node is always a
+      political choice.
+    </p>
+
+    <h2>The environment</h2>
+
+    <p>
+      The environmental ethics of AI are inseparable from the labor ethics.
+      Crawford's framework treats AI as fundamentally extractive: minerals
+      mined for hardware, electricity drawn from grids that are still mostly
+      fossil-fueled, water consumed by cooling systems in regions that often
+      cannot spare it. My data visualization on AI water use (Make 11) found
+      that the most consistent finding across Iowa, Arizona, and the
+      Netherlands was not the size of the figures — it was the fact that the
+      figures are routinely hidden. Companies sign confidentiality clauses
+      with municipalities. State disclosure requirements do not exist until
+      legislation forces them into being. The water is being used. The number
+      exists. Someone is choosing not to share it.
+    </p>
+
+    <h2>The interface is not the whole system</h2>
+
+    <p>
+      The unifying ethical claim across this work is that the interface lies
+      by omission. AI tools are designed to feel clean, frictionless, and
+      neutral. The cleanness is the achievement. Behind it are training data
+      with documented bias, workers with documented trauma, infrastructure
+      with documented environmental cost, and corporate accountability
+      structures explicitly designed to make those facts hard to locate.
+    </p>
+
+    <p>
+      My responsibility as someone who uses these tools, and as someone who
+      hopes to build a career in fields where data and modeling matter, is
+      not to refuse AI. It is to refuse the metaphor that frames it as
+      consequence-free. The cloud is not weightless. Generation is not
+      automatic. Behind every output is a chain of choices, made by people
+      under conditions, drawing on resources that come from somewhere.
+    </p>
+
+    <p>
+      Seeing that clearly is the first ethical act. Insisting that others
+      see it is the second.
+    </p>
+
+    <div class="references">
+      <h2>References</h2>
+      <p>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency,</em> 610–623.</p>
+      <p>Crawford, K. (2021). <em>Atlas of AI: Power, politics, and the planetary costs of artificial intelligence.</em> Yale University Press.</p>
+      <p>D'Ignazio, C., &amp; Klein, L. F. (2020). <em>Data feminism.</em> MIT Press.</p>
+      <p>Gray, M. L., &amp; Suri, S. (2019). <em>Ghost work: How to stop Silicon Valley from building a new global underclass.</em> Houghton Mifflin Harcourt.</p>
+      <p>Roberts, S. T. (2019). <em>Behind the screen: Content moderation in the shadows of social media.</em> Yale University Press.</p>
+    </div>
+
+    <a href="sustainability-accessibility.html" class="next-link">
+      <div><p class="eyebrow">Next →</p><strong>05 — Sustainability &amp; Accessibility</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="journey.html">My AI Journey</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

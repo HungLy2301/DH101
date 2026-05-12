@@ -3,88 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hung Ly — AI, Design, and Critical Making</title>
+  <title>Hung Ly — Critical Making in the Age of AI</title>
+  <meta name="description" content="A portfolio of critical making, research, and reflection on AI, power, and accountability — by Hung Ly, Denison University.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
         <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
-    <section class="hero-section">
-      <h1>Critical making, thoughtful AI, and a semester of work that seeks the hidden systems.</h1>
-      <p>Welcome to my DH101 portfolio. I am Hung Ly, and this site collects 13 weekly projects, reflections, and ethical responses to AI, design, sustainability, and labor. The homepage introduces the portfolio, and the category pages help you navigate by theme.</p>
-      <div class="page-actions">
-        <a href="about.html" class="btn">About Me</a>
-        <a href="my-ai-journey.html" class="btn btn-secondary">My AI Journey</a>
+
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section class="hero">
+      <p class="eyebrow">DH 101 · Spring 2026 · Denison University</p>
+      <h1 class="hero-title">AI is not a tool.<br><em>It is a system of power.</em></h1>
+
+      <div class="hero-intro">
+        <p>
+          I came into this semester thinking about AI the way most people do — as a tool.
+          Something you prompt, something that outputs, something useful or occasionally
+          frustrating. I left thinking about it as a system: a set of relationships between
+          labor, infrastructure, capital, and meaning that is designed, at nearly every
+          level, to make itself hard to see.
+        </p>
+        <p>
+          This portfolio is the record of that shift. Twelve projects — a comic, a GIF, a
+          Twine game, a counter-map, a network diagram, an infographic, a data
+          visualization, a speculative newspaper from 2047 — each one cracking the same
+          assumption from a different angle. The site itself is a fifth artifact: an
+          attempt to make the argument visible.
+        </p>
+      </div>
+
+      <div class="hero-meta">
+        <span>12 makes</span><span>·</span>
+        <span>13 weekly reflections</span><span>·</span>
+        <span>One final argument</span><span>·</span>
+        <a href="journey.html">Begin the journey →</a>
       </div>
     </section>
 
-    <section class="content-section">
-      <h2>Where to Explore</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="card-header"><div class="card-title">About Me</div><div class="card-date">Identity</div></div>
-          <div class="card-body"><p class="card-description">Learn who I am, how I think about systems, and how this portfolio bridges AI, design, and my professional interests.</p><div class="card-footer"><a href="about.html" class="btn">Open About</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">My AI Journey</div><div class="card-date">Portfolio</div></div>
-          <div class="card-body"><p class="card-description">A semester-long journey through weekly makes and reflections, with each project card linking to full writing and artifacts.</p><div class="card-footer"><a href="my-ai-journey.html" class="btn">Explore Journey</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">Sustainability + Accessibility</div><div class="card-date">Practice</div></div>
-          <div class="card-body"><p class="card-description">See the accessibility and environmental design choices that make this website readable, ethical, and more responsible.</p><div class="card-footer"><a href="sustainability-accessibility.html" class="btn">View Details</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">Design & AI Usage</div><div class="card-date">Process</div></div>
-          <div class="card-body"><p class="card-description">Read how I used AI tools, what I designed intentionally, and how I separated human and machine work across the portfolio.</p><div class="card-footer"><a href="design-ai-usage.html" class="btn">See Design</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">Ethics</div><div class="card-date">Values</div></div>
-          <div class="card-body"><p class="card-description">A dedicated ethics page explains bias, labor, transparency, and the readings that shaped my final argument.</p><div class="card-footer"><a href="ethics.html" class="btn">Read Ethics</a></div></div>
-        </article>
-      </div>
-    </section>
+    <!-- ── Section: Navigation Cards ──────────────────────── -->
+    <div class="section-header">
+      <span class="section-num">/ 01</span>
+      <h2>Explore the work</h2>
+    </div>
+    <p class="lead" style="max-width: 60ch; margin-bottom: 1rem;">
+      Five paths through this portfolio. Each one earns the central argument from a different direction.
+    </p>
 
-    <section class="content-section">
-      <h2>Featured Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="card-header"><div class="card-title">Portraits of AI Identity</div><div class="card-date">Week 2</div></div>
-          <div class="card-body"><p class="card-description">A reflection on how AI-generated portrait images shape identity through appearance, style, and symbolic meaning.</p><div class="card-footer"><a href="week02.html" class="btn">View Week 2</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">How Machines Read</div><div class="card-date">Week 5</div></div>
-          <div class="card-body"><p class="card-description">A comparison of Voyant and GPT reading a historic speech, showing what each tool gains and what it omits.</p><div class="card-footer"><a href="week05.html" class="btn">View Week 5</a></div></div>
-        </article>
-        <article class="card">
-          <div class="card-header"><div class="card-title">Mapping AI Worlds</div><div class="card-date">Week 7</div></div>
-          <div class="card-body"><p class="card-description">A counter-map of AI infrastructure and labor that makes invisible systems visible.</p><div class="card-footer"><a href="week07.html" class="btn">View Week 7</a></div></div>
-        </article>
-      </div>
-    </section>
+    <div class="nav-grid">
+
+      <a href="about.html" class="nav-card">
+        <div class="nav-card-num">01 / About</div>
+        <div class="nav-card-title">Who I am, and what brought me here</div>
+        <div class="nav-card-desc">
+          A Financial Economics student at Denison University. Background in modeling, data analysis,
+          and economic development. Increasingly interested in what numbers reveal — and what they hide.
+        </div>
+        <span class="nav-card-arrow">Read more →</span>
+      </a>
+
+      <a href="journey.html" class="nav-card">
+        <div class="nav-card-num">02 / The Journey</div>
+        <div class="nav-card-title">A semester of making, week by week</div>
+        <div class="nav-card-desc">
+          Twelve projects, each with the artifact, a reflection, and a complete attribution box.
+          Begins with reverse-engineering DALL·E. Ends in 2047.
+        </div>
+        <span class="nav-card-arrow">See all 12 makes →</span>
+      </a>
+
+      <a href="design-ai-usage.html" class="nav-card">
+        <div class="nav-card-num">03 / Design &amp; AI</div>
+        <div class="nav-card-title">How I used AI to make this work</div>
+        <div class="nav-card-desc">
+          Honest accounting of every AI tool used this semester — what they generated,
+          what I changed, where I disagreed, and what I refused to outsource.
+        </div>
+        <span class="nav-card-arrow">See the log →</span>
+      </a>
+
+      <a href="ethics.html" class="nav-card">
+        <div class="nav-card-num">04 / Ethics</div>
+        <div class="nav-card-title">Bias, labor, opacity, and what they cost</div>
+        <div class="nav-card-desc">
+          Ethical considerations running through every project: training data bias, hidden labor,
+          algorithmic accountability, and the gap between an interface and its consequences.
+        </div>
+        <span class="nav-card-arrow">Read the analysis →</span>
+      </a>
+
+      <a href="sustainability-accessibility.html" class="nav-card">
+        <div class="nav-card-num">05 / Sustainability</div>
+        <div class="nav-card-title">What the cloud drinks, and who can read this</div>
+        <div class="nav-card-desc">
+          Environmental cost of AI infrastructure and the accessibility decisions that
+          shaped this site. Both are about who gets included and who gets erased.
+        </div>
+        <span class="nav-card-arrow">See the work →</span>
+      </a>
+
+    </div>
+
+    <!-- ── Featured Makes preview ─────────────────────────── -->
+    <div class="section-header">
+      <span class="section-num">/ 02</span>
+      <h2>Selected work</h2>
+    </div>
+    <p class="lead" style="max-width: 60ch; margin-bottom: 2rem;">
+      A glimpse at three projects that mark the shape of the argument.
+    </p>
+
+    <div class="project-grid">
+      <a href="makes/make6.html" class="project-card" data-tag="Map">
+        <div class="project-card-image no-image" style="font-size: 3rem;">⌖</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">No. 06</span>
+            <span class="project-card-tag">Counter-map</span>
+          </div>
+          <h3 class="project-card-title">The Map They Didn't Draw</h3>
+          <p class="project-card-desc">
+            A counter-map placing Google and Meta's data centers and content moderation
+            sites in the same visual field — refusing the frame the companies use.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make9.html" class="project-card" data-tag="Infographic">
+        <div class="project-card-image">
+          <img src="assets/invisible-workforce-infographic.png"
+               alt="Infographic titled 'The Invisible Workforce' showing wage and revenue figures"
+               loading="lazy" style="object-position: top;">
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">No. 09</span>
+            <span class="project-card-tag">Infographic</span>
+          </div>
+          <h3 class="project-card-title">The Invisible Workforce</h3>
+          <p class="project-card-desc">
+            An infographic on the wages, conditions, and psychological toll of content
+            moderators — the people who keep AI platforms safe to use.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+
+      <a href="makes/make12.html" class="project-card" data-tag="Fiction">
+        <div class="project-card-image no-image">2047</div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-card-num">No. 12</span>
+            <span class="project-card-tag">Speculative fiction</span>
+          </div>
+          <h3 class="project-card-title">The Last Human Therapist</h3>
+          <p class="project-card-desc">
+            A newspaper profile from 2047 about the retirement of the last human
+            psychotherapist — and the data-ownership clause buried in the law that made it free.
+          </p>
+          <span class="project-card-link">Read →</span>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="journey.html" class="btn">See all 12 projects</a>
+    </div>
+
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <p class="footer-tagline">A semester of looking behind the interface.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="journey.html">My AI Journey</a></li>
+            <li><a href="final-reflection.html">Final Reflection</a></li>
+            <li><a href="sustainability-accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/hungly2301" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="assets/Harry_Ly_-_Resume.pdf" target="_blank" rel="noopener">Curriculum (PDF)</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-text">© 2026 Hung Ly · DH 101: Critical Making in the Age of AI · Denison University</p>
+      <div class="footer-bottom">
+        <span>© 2026 Hung Ly · DH 101: Critical Making in the Age of AI</span>
+        <span>Denison University · Granville, OH</span>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

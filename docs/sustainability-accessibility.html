@@ -3,71 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sustainability & Accessibility - Hung Ly</title>
+  <title>Sustainability &amp; Accessibility — Hung Ly</title>
+  <meta name="description" content="Environmental cost of AI infrastructure and accessibility decisions made in building this portfolio.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="sustainability-page">
+<body>
 
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
         <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html" aria-current="page">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
-  <main>
+  <main class="page-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Sustainability &amp; Accessibility</span>
+    </nav>
 
-    <section class="hero-section">
-      <h1>Sustainability & Accessibility</h1>
-      <p>This page explains the concrete steps taken to make the portfolio both environmentally mindful and accessible to a wide audience.</p>
-    </section>
+    <p class="eyebrow">/ Sustainability &amp; Accessibility</p>
+    <h1>Who gets included, who gets erased.</h1>
+    <p class="lead">
+      Two questions running through this whole portfolio. The first asks what
+      AI infrastructure costs. The second asks who this website was built for.
+    </p>
 
-    <section class="content-section">
-      <h2>Environmental Design Choices</h2>
-      <ul>
-        <li>Limited external embeds and no automatic tracking scripts to keep page weight low.</li>
-        <li>Used SVGs and compressed images stored locally under <code>docs/assets/images</code>.</li>
-        <li>Built with simple HTML and CSS to reduce unnecessary resource use and speed up load times.</li>
-        <li>Kept the design responsive so the site works well on mobile, tablet, and desktop.</li>
-      </ul>
-    </section>
+    <!-- ── SUSTAINABILITY ─────────────────────────────────── -->
+    <h2 style="margin-top: 4rem;">Sustainability</h2>
 
-    <section class="content-section">
-      <h2>Accessibility Improvements</h2>
-      <ul>
-        <li>Semantic structure with headings, sections, buttons, and clear navigation.</li>
-        <li>All images include descriptive <code>alt</code> text where available.</li>
-        <li>Large buttons, high-contrast text, and spacious layouts for readability.</li>
-        <li>Keyboard-friendly navigation and accessible form controls like search boxes.</li>
-      </ul>
-    </section>
+    <h3>My research</h3>
+    <p>
+      For Make 11, I researched the water cost of AI data centers across three
+      case studies: West Des Moines, Iowa; Mesa, Arizona; and the Amsterdam
+      region in the Netherlands. The full visualization and reflection are on
+      that <a href="makes/make11.html">project page</a>. What I want to surface
+      here is the systemic finding, not the case-by-case detail.
+    </p>
 
-    <section class="content-section">
-      <h2>Why It Matters</h2>
-      <p>Making a site that is easier to read, faster to load, and more respectful of user privacy is part of the same ethical work as questioning AI systems. Accessibility and sustainability are not add-ons. They are part of responsible design.</p>
-    </section>
-    
+    <p>
+      In Iowa, Microsoft operates five data center campuses that use up to
+      11.5 million gallons of water per month for cooling — roughly the
+      equivalent of 17 Olympic swimming pools every 30 days. In Arizona,
+      Google holds a permit equivalent to the annual water use of 23,000
+      Arizonans for its Mesa campus, drawing partly from a Colorado River
+      already in long-term drought. The Netherlands offers a contrast: after
+      sustained public pressure, the national government banned new
+      hyperscale data center construction in 2022. Zero new facilities have
+      been approved since.
+    </p>
 
+    <p>
+      The pattern across all three is consistent: data center water use is
+      large, frequently opaque, and rarely weighed against the needs of the
+      communities surrounding it.
+    </p>
+
+    <h3>Personal reflection</h3>
+
+    <p>
+      I use AI tools constantly — multiple tools, multiple times a day. A single
+      ChatGPT query uses an estimated 4.55g of CO₂ equivalent. The water cost
+      behind that query is harder to quantify, but this project clarified that
+      my individual query is one of billions being processed in facilities
+      drawing millions of gallons from communities that often had no say in
+      those facilities being built there.
+    </p>
+
+    <p>
+      I am willing to be more intentional about which tasks genuinely need AI
+      and which I reach for out of habit. Not every draft, search, or task
+      requires a language model. Introducing that pause — does this actually
+      need AI? — is the most honest commitment I can make.
+    </p>
+
+    <p>
+      I am not willing to pretend that opting out of work-related AI use is a
+      meaningful lever. The tools are embedded in workflows and expected by
+      employers. Saying so honestly matters more than performing a refusal I
+      can't sustain.
+    </p>
+
+    <h3>Steps I took to reduce this site's environmental impact</h3>
+
+    <ul style="font-size: 1rem; padding-left: 1.5rem; line-height: 1.8; color: var(--ink-soft);">
+      <li><strong>Compressed images.</strong> Every image on this site is under 500KB. The largest is the infographic at 416KB. Photographic assets were resized and re-saved before being committed to the repo.</li>
+      <li><strong>No third-party trackers.</strong> No analytics, no advertising scripts, no social media pixels. The only third-party assets are Google Fonts (loaded once and cached) and three embedded iframes for the Datawrapper map, the Twine game, and the speculative newspaper.</li>
+      <li><strong>Static site, no server.</strong> The site is served by GitHub Pages as plain static HTML and CSS. No backend, no database, no Node process, no persistent compute.</li>
+      <li><strong>Minimal JavaScript.</strong> One ~100-line script handles theme toggle, mobile menu, search, and filter. No frameworks, no build step, no large bundle.</li>
+      <li><strong>System font fallbacks.</strong> If Google Fonts fails to load, the site falls back to Georgia and monospace system fonts so no critical content depends on a third-party request.</li>
+      <li><strong>Lazy-loaded images.</strong> Project card images use <code>loading="lazy"</code> so they only load when scrolled into view.</li>
+    </ul>
+
+    <p>
+      Crawford (2021) writes that the "cloud" metaphor presents AI infrastructure
+      as weightless and consequence-free, when infrastructure is in fact the
+      heaviest thing in the system. The decisions above won't change that. They
+      are small, individual choices in the face of a structural problem. But
+      they are an attempt, in a small way, not to participate in the metaphor.
+    </p>
+
+    <h3>Systemic vs. individual</h3>
+    <p>
+      <strong>What can individuals do?</strong> Use AI intentionally rather than
+      reflexively. Ask where AI infrastructure is built and who bears the
+      environmental cost. Support transparency legislation. Pressure
+      institutions to account for sustainability in their AI adoption
+      decisions. Stop treating "the cloud" as weightless.
+    </p>
+    <p>
+      <strong>What requires systemic change?</strong> Mandatory public disclosure
+      of water and energy use for all data centers. Community consent processes
+      before permits are granted. Restrictions on water-intensive builds in
+      drought-stressed regions. Regulatory frameworks with real enforcement —
+      like the Netherlands' 2022 national ban. Accountability for indirect water
+      costs (power-plant cooling) that companies currently exclude from their
+      reported figures.
+    </p>
+    <p>
+      <strong>Who is responsible?</strong> Primarily the companies that build and
+      operate data centers. They make the siting decisions, negotiate the water
+      rights, and benefit from the opacity. Governments bear responsibility too —
+      for incentivizing expansion without adequate environmental review.
+      Individuals are responsible for not looking away, and for resisting the
+      framing that personal consumption habits are the core of the problem. The
+      Netherlands shows what a systemic response to a systemic problem looks like.
+    </p>
+
+    <!-- ── ACCESSIBILITY ──────────────────────────────────── -->
+    <h2 style="margin-top: 5rem;">Accessibility</h2>
+
+    <p>
+      This site is committed to being usable by readers regardless of how they
+      access it. The decisions below are specific. They were made deliberately.
+      Some are documented in the code itself.
+    </p>
+
+    <h3>Semantic HTML &amp; heading hierarchy</h3>
+    <p>
+      Every page uses a single <code>&lt;h1&gt;</code> for the page title,
+      followed by <code>&lt;h2&gt;</code> for major sections and
+      <code>&lt;h3&gt;</code> for subsections. Heading levels are never
+      skipped. This matters because screen readers allow users to navigate a
+      page by jumping between headings — if heading levels are skipped or used
+      for visual styling rather than structure, that navigation breaks.
+    </p>
+    <p>
+      Semantic HTML elements (<code>&lt;nav&gt;</code>,
+      <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>,
+      <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>) are used
+      everywhere they have a structural role.
+    </p>
+
+    <h3>Alt text</h3>
+    <p>
+      Every image has descriptive alt text. The alt text describes what the
+      image <em>shows</em>, not just what it <em>is</em>. The Kumu network
+      visualization is described as <em>"Network graph showing app
+      relationships clustered around Google, Apple, Meta, Microsoft."</em>
+      Decorative elements that convey no information use empty alt attributes
+      so screen readers skip them.
+    </p>
+
+    <h3>Color contrast</h3>
+    <p>
+      All text-background color combinations were tested against the WCAG AA
+      standard of 4.5:1 contrast ratio (3:1 for large text). Both light and dark
+      modes meet the standard. I re-tested after every palette adjustment
+      because contrast failures often appear when a color is changed in
+      isolation.
+    </p>
+
+    <h3>Navigation &amp; link text</h3>
+    <p>
+      The navigation bar is consistent across every page and uses descriptive
+      link text. No "click here." No "read more" with no destination. The
+      current page is marked with <code>aria-current="page"</code> so screen
+      readers can announce it.
+    </p>
+
+    <h3>Responsive design</h3>
+    <p>
+      The layout is responsive and tested on desktop (1920px, 1280px) and
+      mobile (375px) viewports. Font sizes use relative units (<code>rem</code>)
+      so text scales correctly when a user changes their browser's base font
+      size. The mobile menu collapses below 700px and uses a slide-in panel
+      that can be dismissed by tapping outside.
+    </p>
+
+    <h3>Dark mode</h3>
+    <p>
+      Light and dark themes are both available via the toggle in the top right
+      of every page. The site respects the operating system's
+      <code>prefers-color-scheme</code> setting on first visit and remembers
+      the user's choice in <code>localStorage</code> after that.
+    </p>
+
+    <h3>Reduced motion</h3>
+    <p>
+      All animations and transitions respect the
+      <code>prefers-reduced-motion</code> media query. Users who have asked
+      their operating system to minimize animation will get a site that
+      doesn't move.
+    </p>
+
+    <h3>Known limitations</h3>
+    <p>
+      The embedded Datawrapper visualization (Make 11), the Kumu network map
+      (Make 7), and the Google My Maps embed (Make 6) are third-party tools
+      with their own accessibility implementations that I cannot fully
+      control. Each is accompanied by a full text description on its project
+      page so that users who cannot interact with the visual still have
+      access to the information.
+    </p>
+
+    <h3>Contact</h3>
+    <p>
+      If you encounter any barrier accessing content on this site, please
+      contact me at <a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a>
+      and I will address it.
+    </p>
+
+    <a href="index.html" class="next-link">
+      <div><p class="eyebrow">Back to →</p><strong>Home</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="journey.html">My AI Journey</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

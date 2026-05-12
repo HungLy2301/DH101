@@ -3,83 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 3: Selfie & Identity - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Cream-Puff Boys: A Story About Formula — Make 03</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 03</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 3: Selfie & Identity</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 3: Selfie & Identity</h1>
-          <p class="page-subtitle">Digital self-representation in networked spaces</p>
-          <div class="page-body">
-            <h2>Summary</h2>
-    <p>This week asks how digital self-portraits produced with or through AI shape the meaning of identity.</p>
-    <h2>Artifact</h2>
-    <p>Describe your selfie or identity artifact, then add images or links below.</p>
-    <p><img src="assets/images/week03-selfie.png" alt="Example selfie or generated portrait with identity markers" /> <em>Visual example of the selfie or identity artifact used in this project.</em></p>
-    <h2>Process Notes</h2>
-    <ul>
-    <li>Tools used: describe tools, platforms, or image generation techniques.</li>
-    <li>Decisions: explain how you chose composition, style, and narrative.</li>
-    <li>Links/Maps: link related examples or AI services used.</li>
-    </ul>
-    <h2>Reflection</h2>
-    <p>Respond to the reflection prompt and connect the artifact to identity, culture, and representation.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Tools used:</li>
-    <li>AI prompts (summary):</li>
-    <li>What AI generated:</li>
-    <li>What you changed or decided:</li>
-    <li>Sources:</li>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 03 · Week 03</span>
+        <span>Comic · AI image generation</span>
+        <span>Tool: ChatGPT</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">Cream-Puff Boys</h1>
+      <p class="make-subtitle">
+        A five-panel fairy comic about sweetness saving the world. What I learned was
+        not about sweetness. It was about formula.
+      </p>
+    </header>
 
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">The Artifact</h2>
+        <div class="artifact-frame">
+          <img src="../assets/comic-first-prompt.jpg" alt="Comic panels titled 'Cream-Puff Boys: Saving the World with Sweetness' showing three cute heroes battling a shadow villain with sugar power">
+        </div>
+        <p class="artifact-caption">First version, from the original prompt.</p>
+
+        <div class="artifact-frame" style="margin-top: 2rem;">
+          <img src="../assets/comic-second-prompt.jpg" alt="Second version of the same comic with revised emotional tone and updated dialogue">
+        </div>
+        <p class="artifact-caption">Second version, after asking for more emotional resonance.</p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>What I asked for</h3>
+        <p>
+          I wanted to explore the idea that sweetness and kindness can create change.
+          I prompted AI to generate a five-panel fairy-style comic about "cream-puff
+          boys" saving the world through sweetness. The panels follow a clear
+          structure: introduction of heroes, appearance of darkness, action through
+          "sugar power," transformation of the villain, and a final moral statement.
+        </p>
+
+        <h3>What I got</h3>
+        <p>
+          What I got was structurally competent and emotionally familiar. The AI
+          relied on familiar superhero patterns — a dark villain, a dramatic attack,
+          an instant redemption. The panel sequence moves from chaos to harmony in
+          the way every cape-and-cowl story has moved from chaos to harmony for
+          fifty years. AI produces recognizable narrative formulas, not original
+          lived meaning.
+        </p>
+
+        <h3>Who's actually telling the story</h3>
+        <p>
+          While the AI generated the images and dialogue, the intention came from me.
+          I chose the theme, the moral, and the emotional tone. I acted as the
+          director, deciding what the story should represent. The AI acted as the
+          illustrator and draft writer. The meaning comes from my concept; the
+          execution reflects machine-learned storytelling structures.
+        </p>
+
+        <h3>The bigger point</h3>
+        <p>
+          AI does not independently "tell" a story. It generates visual and
+          narrative patterns based on training data. Making with AI is
+          collaborative, but human intention still defines purpose and message —
+          and the limit of that collaboration becomes most visible when the
+          machine reaches for formula and the human has to decide whether the
+          formula is the right fit for the meaning they intended.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Tools used</dt><dd>ChatGPT (image generation based on text prompts)</dd></div>
+        <div><dt>AI prompts (summary)</dt>
+          <dd><strong>Prompt 1:</strong> "Create a short comic about cream-puff boys going to save the world with sweetness and 'power-puff-ness'; the moral of the comic is to promote the idea that sweetness can initiate change and save the world. Create a 5-panel comic with cute and fairy drawing style."<br><br>
+          <strong>Prompt 2:</strong> "Make the comic and storyline more emotional, touching, and invoke moral sense to deliver the message of how sweetness can save the world."</dd></div>
+        <div><dt>What AI generated</dt>
+          <dd>Two five-panel comic versions in chibi/fairy art style with dialogue and visual narrative.</dd></div>
+        <div><dt>What I changed or decided</dt>
+          <dd>Story concept, moral theme, prompt design, panel intention. The reflection analyzing AI's tendency toward formula is entirely my own writing. The decision to present both versions (rather than just the "better" one) is deliberate — it makes the formula-default visible.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 03</p>
+      <h3>What does "authenticity" mean when identity is co-constructed with AI?</h3>
+      <p>
+        When identity is co-constructed with AI, authenticity becomes limited. AI
+        builds identities by combining existing data and visual patterns rather
+        than understanding who a person truly is. Even when humans guide the
+        prompt, the result often reflects surface level traits instead of deeper
+        human qualities. While AI can closely match someone's appearance with
+        enough detail, it struggles to represent internal values, emotions, and
+        lived experiences. Abstract traits like kindness or feeling fulfilled are
+        difficult for AI to visualize. Authenticity in AI-generated identity is
+        more about visual accuracy than truly representing the complexity of a
+        real person.
+      </p>
+    </section>
+
+    <a href="make4.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>04 — Progress Loop</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

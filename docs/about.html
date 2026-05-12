@@ -4,111 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Hung Ly</title>
+  <meta name="description" content="About Hung Ly — Financial Economics student at Denison University, exploring AI, data, and accountability.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html">Design &amp; AI</a></li>
         <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
-    <section class="content-section">
-      <h1>About Me</h1>
-      <div class="about-section">
-        <div style="display:grid; grid-template-columns: 1fr 320px; gap:2rem; align-items:center;">
-          <div>
-            <h2>Hi — I'm Harry.</h2>
-            <p>I'm a junior at Denison University studying Financial Economics with a Mathematics minor (GPA 3.75/4.0). My professional foundation is in data analysis, financial modeling, and strategy consulting—but I came into DH 101 to ask a deeper question: what systems are hidden behind the tools we use every day, especially AI?</p>
-            <p>This semester brought together two sides of how I think. On one side: Excel models, ROI calculations, comparable analysis. On the other: critical mapping, network visualization, speculative design. This portfolio shows that work, and the argument that emerged from it: that AI is not a tool, but a system of power that shapes what gets measured, what gets hidden, and who bears the cost.</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>About</span>
+    </nav>
+
+    <p class="eyebrow">/ About</p>
+    <h1>Hello — I'm Hung.</h1>
+
+    <div class="about-grid">
+
+      <!-- Photo column -->
+      <aside class="about-photo">
+        <img src="assets/IMG_1535.JPG" alt="Portrait of Hung Ly, smiling in a sunlit campus building">
+        <p class="about-photo-caption">Denison University · 2026</p>
+
+        <div style="margin-top: 2.5rem;">
+          <h3 style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Quick facts</h3>
+          <dl style="display: grid; gap: 0.75rem; font-size: 0.9rem;">
+            <div><dt style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--ink-faint); letter-spacing: 0.1em;">Studying</dt>
+              <dd style="color: var(--ink-soft);">Financial Economics (Math minor)</dd></div>
+            <div><dt style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--ink-faint); letter-spacing: 0.1em;">At</dt>
+              <dd style="color: var(--ink-soft);">Denison University, OH</dd></div>
+            <div><dt style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--ink-faint); letter-spacing: 0.1em;">Graduating</dt>
+              <dd style="color: var(--ink-soft);">June 2027</dd></div>
+            <div><dt style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--ink-faint); letter-spacing: 0.1em;">GPA</dt>
+              <dd style="color: var(--ink-soft);">3.75 / 4.00</dd></div>
+            <div><dt style="font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; color: var(--ink-faint); letter-spacing: 0.1em;">From</dt>
+              <dd style="color: var(--ink-soft);">Vietnam · Now Granville, OH</dd></div>
+          </dl>
+        </div>
+      </aside>
+
+      <!-- Bio column -->
+      <div class="about-bio">
+        <p class="lead" style="font-size: 1.35rem; line-height: 1.5; color: var(--ink); font-style: normal; margin-bottom: 2rem;">
+          I'm a Financial Economics student with a quiet preference for the question
+          underneath the numbers: who decides what gets measured, and what gets left out?
+        </p>
+
+        <p>
+          My academic background is quantitative — financial modeling, econometrics,
+          risk analysis. My instinct, though, has always pushed sideways: toward the
+          part of the spreadsheet that doesn't fit in a column. Which assumption is
+          carrying the analysis? Whose labor is missing from the model? What does
+          this number conceal that the company chose not to publish?
+        </p>
+
+        <p>
+          DH 101: Critical Making in the Age of AI gave me a language for those
+          questions, and a set of tools — counter-mapping, network analysis,
+          speculative design, infographic, interactive narrative — to work with
+          them. The result is this portfolio: a record of moving from thinking
+          about AI as a tool to thinking about it as a system of power.
+        </p>
+
+        <p>
+          Outside the classroom, I've put these instincts to work in real contexts.
+          As an Economic Development Intern at Cleveland Neighborhood Progress, I
+          analyzed data for 10+ neighborhoods and built asset maps supporting a
+          $2M+ corridor revitalization. At Denison Consulting, I built financial
+          models for 50+ product lines and ran comparable analyses for 50+
+          potential partner companies. I've competed in the L'Oréal Brandstorm
+          and Accenture case competitions, and once founded a small e-commerce
+          candle business just to see if I could.
+        </p>
+
+        <p>
+          The through-line, I think, is the same instinct that shows up in this
+          portfolio: looking for the structure underneath the surface, and
+          insisting that what gets hidden is part of what's true.
+        </p>
+
+        <!-- Skills -->
+        <h2 style="font-size: 1.4rem; margin-top: 3rem;">Skills &amp; tools</h2>
+
+        <div class="skill-grid">
+          <div class="skill-cat">
+            <h4>Analytical &amp; financial</h4>
+            <p>Advanced Excel · VBA · Financial Modeling · Tableau · R · Python · SQL · Econometrics · Placer.ai</p>
           </div>
-          <div>
-            <img src="assets/images/IMG_1535.jpg" alt="Headshot of Harry Ly" style="width:100%; border-radius: 28px; box-shadow: var(--shadow);" />
-            <p style="margin-top: 1rem; font-size: 0.95rem; color: #576188;">Add your headshot as <code>docs/assets/images/IMG_1535.jpg</code></p>
+          <div class="skill-cat">
+            <h4>Digital humanities</h4>
+            <p>HTML / CSS · JavaScript · Twine · Datawrapper · Kumu · Voyant · Tracery · Google My Maps · Canva</p>
+          </div>
+          <div class="skill-cat">
+            <h4>Project &amp; ops</h4>
+            <p>HubSpot · Airtable · Asana · Monday.com · Microsoft Office Suite · Git &amp; GitHub Pages</p>
+          </div>
+          <div class="skill-cat">
+            <h4>Languages</h4>
+            <p>English (fluent) · Vietnamese (native)</p>
           </div>
         </div>
-      </div>
 
-      <div class="about-section">
-        <h2>What I Do</h2>
-        <p>I build analysis and argument together. Whether I'm modeling financial scenarios, analyzing economic data, or mapping infrastructure systems, the goal is the same: make visible what systems tend to hide.</p>
-        <ul>
-          <li>Financial modeling and ROI analysis (Excel, Python, Tableau)</li>
-          <li>Data analysis and market research (Placer.ai, R, SQL)</li>
-          <li>Strategic planning and comparable analysis</li>
-          <li>Critical design and infrastructure mapping</li>
-          <li>Project workflow optimization and stakeholder alignment</li>
-          <li>AI ethics, labor visibility, and sustainability questions</li>
-        </ul>
-      </div>
+        <!-- Currently -->
+        <h2 style="font-size: 1.4rem;">Currently</h2>
+        <p>
+          Junior at Denison. Expected graduation <strong>June 2027</strong>. Open to
+          summer 2026 internships in economic development, strategy consulting,
+          financial analysis, or roles that combine data and storytelling in a
+          meaningful way. Willing to relocate.
+        </p>
 
-      <div class="about-section">
-        <h2>Professional Experience</h2>
-        <p><strong>Denison Consulting</strong> – Senior Strategy & Analytics Consultant</p>
-        <ul>
-          <li>Analyzed 20+ industry reports using Excel and Tableau, implementing HubSpot automation to improve operational compliance</li>
-          <li>Conducted comparable analysis for 50+ partner companies, creating client-oriented reports with strategic recommendations</li>
-          <li>Built dynamic financial models assessing ROI across 50+ product lines, reducing production inefficiencies</li>
-        </ul>
-        <p style="margin-top: 1.5rem;"><strong>Cleveland Neighborhood Progress</strong> – Economic Development Intern</p>
-        <ul>
-          <li>Analyzed demographic and economic data for 10+ neighborhoods using Placer.ai, informing $2M+ corridor revitalization strategy</li>
-          <li>Created 8+ asset and investment maps supporting partnership development and internal reporting</li>
-          <li>Conducted market research for 100+ local stakeholders, producing marketing templates and asset guides</li>
-        </ul>
-      </div>
+        <!-- Get in touch -->
+        <h2 style="font-size: 1.4rem;">Get in touch</h2>
+        <p>
+          The best way to reach me is email. I'm happy to discuss ideas,
+          collaborate on projects, or talk about anything in this portfolio.
+        </p>
 
-      <div class="about-section">
-        <h2>Technical Skills</h2>
-        <p><strong>Data & Analytics:</strong> Advanced Excel (pivot tables, VBA, financial modeling), Tableau, Python, R Studio, SQL, Placer.ai</p>
-        <p style="margin-top: 0.75rem;"><strong>Business Tools:</strong> HubSpot, Airtable, Asana, Monday.com, Microsoft Office Suite</p>
-        <p style="margin-top: 0.75rem;"><strong>Web & Design:</strong> HTML/CSS, JavaScript, Twine (interactive narrative), Datawrapper, Kumu, Voyant Tools, Git/GitHub Pages</p>
-      </div>
-
-      <div class="about-section">
-        <h2>Interests & Competitions</h2>
-        <ul>
-          <li>Hidden labor and infrastructure behind AI systems</li>
-          <li>Data visualization as argument, not just display</li>
-          <li>Economic development and equitable growth</li>
-          <li>AI ethics, bias, and corporate accountability</li>
-          <li>Financial modeling with social impact</li>
-          <li>Speculative design and futures thinking</li>
-          <li>L'Oréal Brandstorm (Spring 2025) – Developed men's grooming product strategy and financial feasibility model</li>
-          <li>Accenture Case Interview Competition (Fall 2024) – Competed on organizational sustainability strategy</li>
-        </ul>
-      </div>
-
-      <div class="about-section">
-        <h2>Connect</h2>
-        <p>Explore my work, connect on LinkedIn, or reach out directly. I'm interested in opportunities in economic development, data strategy, or roles that combine financial analysis with meaningful impact.</p>
-        <div class="page-actions">
-          <a href="https://www.linkedin.com/in/harry-ly-hung/" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:ly_h1@denison.edu" class="btn btn-secondary">Email</a>
-          <a href="tel:+1503-878-3919" class="btn btn-secondary">Call</a>
+        <div class="contact-row">
+          <a href="mailto:ly_h1@denison.edu" class="btn">Email me</a>
+          <a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener" class="btn-secondary btn">LinkedIn</a>
+          <a href="https://github.com/hungly2301" target="_blank" rel="noopener" class="btn-secondary btn">GitHub</a>
+          <a href="assets/Harry_Ly_-_Resume.pdf" target="_blank" rel="noopener" class="btn-secondary btn">Resume (PDF)</a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <a href="journey.html" class="next-link">
+      <div>
+        <p class="eyebrow">Next →</p>
+        <strong>02 — My AI Journey</strong>
+      </div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journey.html">My AI Journey</a></li>
+            <li><a href="final-reflection.html">Final Reflection</a></li>
+            <li><a href="sustainability-accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/hungly2301" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="assets/Harry_Ly_-_Resume.pdf" target="_blank" rel="noopener">Curriculum</a></li>
+          </ul>
+        </div>
       </div>
-      <p class="footer-text">© 2026 Hung Ly · DH 101: Critical Making in the Age of AI · Denison University</p>
+      <div class="footer-bottom">
+        <span>© 2026 Hung Ly · DH 101: Critical Making in the Age of AI</span>
+        <span>Denison University · Granville, OH</span>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

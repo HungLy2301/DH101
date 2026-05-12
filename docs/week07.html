@@ -3,90 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 7: Mapping AI Worlds - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>I Have No Node — Make 07</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 07</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 7: Mapping AI Worlds</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 7: Mapping AI Worlds</h1>
-          <p class="page-subtitle">Critical infrastructure mapping and power analysis</p>
-          <div class="page-body">
-            <h2>Summary</h2>
-    <p>This project builds a map of AI geography, labor, and infrastructure to show how power and cost are distributed globally.</p>
-    <h2>Artifact</h2>
-    <p>Map: https://www.google.com/maps/d/edit?mid=1VWQhf7N7qBogZJipxJLx-Z6NUeBFTMU&ll=25.241368318556674%2C-0.5817499999999924&z=3</p>
-    <p>Describe the map and the data layers included. Mention the visual logic, color coding, and what the map reveals.</p>
-    <h2>Process Notes</h2>
-    <ul>
-    <li>Tools used: Google My Maps, research sources, mapping workflow.</li>
-    <li>Decisions: selected headquarters, data centers, and labor sites to highlight infrastructure and harm.</li>
-    <li>Links: provide source URLs for corporate and journalistic reporting.</li>
-    </ul>
-    <h2>Sources</h2>
-    <ul>
-    <li>Alphabet investor relations and SEC filings</li>
-    <li>Meta infrastructure pages and press releases</li>
-    <li>Baxtel, dgtlinfra, and Data Center Dynamics for data center details</li>
-    <li>TIME Magazine 2023, CNN Business 2024, The Bureau of Investigative Journalism 2025, Foxglove, Washington Post, Rappler, and Coda Story</li>
-    </ul>
-    <h2>Reflection</h2>
-    <p>Reflect on how maps can make AI power visible and how they may also hide or simplify relationships.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Tools used:</li>
-    <li>AI prompts (summary):</li>
-    <li>What AI generated:</li>
-    <li>What you changed or decided:</li>
-    <li>Sources: see above.</li>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 07 · Week 07</span>
+        <span>Network · Power mapping</span>
+        <span>Tool: Kumu</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">I Have No Node</h1>
+      <p class="make-subtitle">
+        A network of every platform, company, and data type in my digital ecosystem.
+        I am visible as the data source. I have no node.
+      </p>
+    </header>
 
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">The Artifact</h2>
+        <div class="artifact-frame">
+          <img src="../assets/kumu-map.png" alt="Network graph showing dozens of nodes (apps, companies, and data types) interconnected with colored lines, clustered around Google, Apple, Meta, and Microsoft. The user has no node in the graph.">
+        </div>
+        <p class="artifact-caption">
+          Kumu visualization. Color legend: blue = person, green = corporation, purple = app/service, red = AI tool, orange = your data.
+        </p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>The most central node</h3>
+        <p>
+          The most central node is Google (Alphabet) — highest degree centrality.
+          It connects to the most other nodes: data types (browsing history,
+          location, content, AI prompts), its own products (YouTube, Gmail,
+          Gemini), and even Apple, its supposed competitor, which receives
+          approximately $20 billion per year from Google to remain Safari's default
+          search engine. This financial relationship is the network's most
+          surprising edge: Apple's entire privacy marketing brand is funded
+          partly by the company it claims to protect users against.
+        </p>
+
+        <h3>Three clusters</h3>
+        <p>
+          The <strong>Meta cluster</strong>: Facebook, Instagram, and Meta forming
+          a tightly interconnected group, all feeding into a unified social graph
+          and, since 2024, into Meta's Llama AI training pipeline.
+        </p>
+        <p>
+          The <strong>Microsoft/work cluster</strong>: LinkedIn, GitHub, and VS
+          Code Copilot forming a professional identity network where Microsoft
+          quietly collects career data, code, and AI prompts across tools many
+          people consider neutral utilities.
+        </p>
+        <p>
+          The <strong>data type cluster</strong>: nodes like "Your Location Data,"
+          "Your Financial Data," and "Your AI Prompts" sit at the intersection of
+          many companies, acting as bridges between platforms that would otherwise
+          seem unrelated.
+        </p>
+
+        <h3>The surprise: AI prompt collection</h3>
+        <p>
+          The most surprising finding was how many companies collect AI prompts —
+          not just ChatGPT, but VS Code Copilot (routed through Microsoft/OpenAI),
+          Gemini, Claude, Lovable, Canva AI, and Jobright. Every question asked,
+          every piece of code written with AI assistance, every job application
+          drafted with AI becomes data owned by a corporation.
+        </p>
+
+        <h3>Power is radial</h3>
+        <p>
+          Power in this network is not distributed; it is radial. Every action —
+          searching, messaging, coding, applying for jobs, asking AI a question —
+          produces data that flows toward four hubs: Apple, Google, Meta,
+          Microsoft. The entities with the most edges are not the services I
+          consciously chose to use. They are the parent companies I never directly
+          interact with.
+        </p>
+
+        <h3>I have no node</h3>
+        <p>
+          I am technically visible as the user who generates the data, but I have
+          no node. My data — location, prompts, social graph, financial behavior —
+          appears in the network as abstract types, not as a person with agency.
+          The companies are visible; their internal AI systems and the
+          advertisers who purchase the profiles built from my behavior are not.
+          The workers who moderate content, the people in the DRC whose cobalt
+          powers the devices, the regulators who failed to prevent this
+          consolidation — all invisible.
+        </p>
+
+        <p>
+          D'Ignazio and Klein (2020) argue in <em>Data Feminism</em> that the
+          choice of what to put at the center of a visualization is never
+          neutral. If I had centered this network on myself as the user, with
+          edges pointing outward to services I chose rather than inward to
+          corporations that chose me, the network would imply agency and
+          consent. A network centered on advertisers would reveal the true
+          economic structure: I am not the customer, I am the product. The
+          choice of center node is always a political choice.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Tools used</dt>
+          <dd>Kumu (network mapping and visualization) · Claude AI by Anthropic (research organization and data verification) · WebAIM Contrast Checker (accessibility testing) · Google My Maps (cross-reference for geographic data)</dd></div>
+        <div><dt>AI prompts (summary)</dt>
+          <dd>I asked Claude to help compile and cross-reference which data types flow between specific companies — for example, confirming the reported figure for Google's annual payment to Apple and verifying which platforms route AI prompts through Microsoft/OpenAI infrastructure. I also asked it to identify gaps in the network.</dd></div>
+        <div><dt>What AI generated</dt>
+          <dd>A structured list of data-sharing relationships between platforms and parent companies, used as a research starting point. AI also flagged nodes I had not initially included — specifically data brokers (Acxiom, LexisNexis) and the advertiser layer — which I ultimately chose to omit from the visual with a documented rationale.</dd></div>
+        <div><dt>What I changed or decided</dt>
+          <dd>Every structural and argumentative decision in this network is my own. I chose to center the network on corporations rather than on myself as the user — a deliberate political choice. The three-cluster structure, the identification of "Your AI Prompts" as a bridge node, and the observation that Apple's privacy brand is financially underwritten by Google are findings I arrived at through my own analysis. The written components are entirely my own prose.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 07</p>
+      <h3>Who is visible/invisible in AI networks? How does visualization reveal or obscure power?</h3>
+      <p>
+        Building my personal AI ecosystem network made the invisible suddenly
+        visible. On the surface, I interact with dozens of apps daily (Spotify,
+        Gmail, TikTok, ChatGPT) but the network revealed that nearly everything
+        flows back to four corporations: Google, Apple, Meta, and Microsoft.
+        What struck me most was not the individual apps but the data type
+        nodes. My location, my AI prompts, my financial behavior, my social
+        graph — these sit at the center of the network as bridges connecting
+        platforms that seem completely unrelated to each other.
+      </p>
+      <p>
+        What the visualization obscures is just as important. I have no node.
+        The person generating all this data is absent from the map, which
+        itself is a statement about power. I am not a participant in this
+        network, I am its raw material. Also invisible are the data brokers,
+        the advertisers who are the actual customers, and the workers and
+        communities whose labor and resources make the physical infrastructure
+        possible.
+      </p>
+    </section>
+
+    <a href="make8.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>08 — Strange Inventory</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

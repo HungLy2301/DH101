@@ -3,65 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design & AI Usage - Hung Ly</title>
+  <title>Design &amp; AI Usage — Hung Ly</title>
+  <meta name="description" content="Honest log of how AI was used in making this portfolio: tools, prompts, what AI generated, what I changed.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="design-page">
+<body>
 
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">My AI Journey</a></li>
+        <li><a href="design-ai-usage.html" aria-current="page">Design &amp; AI</a></li>
         <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
-  <main>
+  <main class="page-narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Design &amp; AI Usage</span>
+    </nav>
 
-    <section class="hero-section">
-      <h1>Design & AI Usage</h1>
-      <p>This page describes the design approach, the AI tools used, and how human judgment guided the final work.</p>
-    </section>
+    <p class="eyebrow">/ How I Use AI</p>
+    <h1>Design &amp; AI Usage</h1>
+    <p class="lead">
+      An honest, page-by-page accounting of every AI tool I used this semester —
+      and where I refused to use one.
+    </p>
 
-    <section class="content-section">
-      <h2>Design Approach</h2>
-      <p>The visual style uses strong headings, clear cards, and a calm palette to let ideas appear without distraction. The layout was created for both browsing and deep reading, with project cards that invite curiosity and reflection sections that provide context.</p>
-    </section>
+    <div class="callout">
+      <p style="margin: 0;"><strong>The short version:</strong> I use AI as a thinking partner
+      and pressure-tester, not a ghostwriter. Every reflection on this site is my own writing.
+      Every artifact was directed, curated, and argumentatively framed by me. AI helped me
+      move faster, organize research, and react against suggestions I disagreed with. That
+      collaboration is documented here and inside every individual make page.</p>
+    </div>
 
-    <section class="content-section">
-      <h2>AI Tools Used</h2>
-      <ul>
-        <li>ChatGPT for drafting and editing reflection text, refining arguments, and creating metadata for the portfolio.</li>
-        <li>Image generation tools for AI portrait work and concept illustration summaries.</li>
-        <li>Python scripting to convert Markdown into HTML and keep project pages consistent.</li>
-      </ul>
-    </section>
+    <h2>Tools I used</h2>
 
-    <section class="content-section">
-      <h2>Human Contribution</h2>
-      <p>All final writing, project framing, and ethical decisions were made personally. Every page was reviewed and rewritten to ensure the voice is my own, and every AI contribution is disclosed in the make pages.</p>
-    </section>
-    
+    <h3>GitHub Copilot (in VS Code)</h3>
+    <p>
+      Used throughout the semester to build and iterate on this website — HTML, CSS,
+      JavaScript, layout, accessibility. Copilot generated structural code, suggested
+      responsive patterns, and helped debug. I reviewed and rewrote where it broke
+      semantic structure or accessibility. The design decisions (color palette,
+      typography, hierarchy) are my own.
+    </p>
 
-  </main>
+    <h3>Claude (Anthropic, claude.ai)</h3>
+    <p>
+      Used as a thinking partner across multiple projects: research synthesis,
+      argumentative pressure-testing, editing feedback, and structural brainstorming.
+      I did not use Claude to ghostwrite final prose. When I used Claude's suggestions
+      as a starting point, I rewrote the surrounding text entirely. When I disagreed
+      with a suggestion, I kept the disagreement and noted it.
+    </p>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
-      </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
+    <h3>ChatGPT (OpenAI)</h3>
+    <p>
+      Used for image generation in my comic (Make 3) and selfie projects (Make 2),
+      and as an object of study in my text analysis (Make 5). In the comic, ChatGPT
+      generated panels and dialogue from my prompts; the concept, moral, and editorial
+      direction were mine. In the text analysis, I deliberately used ChatGPT's output
+      as something to be critiqued rather than as a writing aid.
+    </p>
+
+    <h3>Specialized tools</h3>
+    <p>
+      Canva AI for the infographic layout (Make 9). Datawrapper for the water-use
+      visualization (Make 11). Voyant Tools for word-frequency analysis (Make 5).
+      Kumu for network mapping (Make 7). Tracery for grammar-based generation (Make 8).
+      Twine for interactive narrative (Make 10). None of these are AI in the
+      large-language-model sense, but they shape outputs in ways I document in
+      individual project attribution boxes.
+    </p>
+
+    <h2>Two concrete examples</h2>
+
+    <div class="highlight-box">
+      <p class="eyebrow">Example 1 — The Comic (ChatGPT image generation)</p>
+      <h3 style="margin-top: 0.5rem;">What I asked</h3>
+      <p>
+        <em>"Create a short comic about cream-puff boys going to save the world with
+        sweetness and 'power-puff-ness'; the moral of the comic is to promote the idea
+        that sweetness can initiate change and save the world, create a 5-panel comic
+        with cute and fairy drawing style."</em>
+      </p>
+      <h3>What it gave me</h3>
+      <p>
+        A five-panel comic with a villain, a dramatic confrontation, and an instant
+        redemption — a recognizable superhero formula. The output was visually
+        competent and narratively predictable.
+      </p>
+      <h3>What I did with it</h3>
+      <p>
+        I identified that the AI defaulted to formula rather than meaning, which became
+        the central argument of my reflection. I sent a follow-up prompt asking for
+        greater emotional depth, then selected between versions based on which better
+        served the moral I had defined. The concept, theme, tone, and written
+        reflection are entirely mine. The AI was the illustrator; I was the director.
       </p>
     </div>
+
+    <div class="highlight-box">
+      <p class="eyebrow">Example 2 — The Interview Game (Claude structural assistance)</p>
+      <h3 style="margin-top: 0.5rem;">What I asked</h3>
+      <p>
+        I described the emotional arc I wanted — mounting discomfort rather than
+        escalating drama — and asked Claude to help me think through how a player's
+        feelings should shift across the game. I also asked it to brainstorm
+        plausible AI-interviewer questions.
+      </p>
+      <h3>What it gave me</h3>
+      <p>
+        Claude proposed building around measured precision (decimal seconds,
+        percentile scores) as the primary tool for creating unease, and generated a
+        list of interview questions ranging from productivity self-ratings to
+        five-year plans. It also offered a draft line for the opening passage:
+        <em>"The room feels like it was designed by an AI that had only read
+        descriptions of waiting rooms."</em>
+      </p>
+      <h3>What I did with it</h3>
+      <p>
+        I kept the framing about measured precision — it matched what I was going
+        for and accelerated the design. I discarded most of the generated questions
+        as too generic and wrote my own. I rejected the suggested opening line as
+        "too clever and too on-the-nose" and replaced it with my own, which
+        compares the white of the room to "the white of a loading screen, of a
+        blank document." Both endings were written entirely by me. When Claude
+        flagged that Ending B might feel deflating, I kept it exactly as written.
+        The deflation is the point.
+      </p>
+    </div>
+
+    <h2>Verification and correction of AI output</h2>
+    <p>I did not accept AI outputs unchecked. Specifically:</p>
+    <ul style="font-size: 1rem; padding-left: 1.5rem; line-height: 1.8; color: var(--ink-soft);">
+      <li>All factual claims in my infographic (Make 9) and ecology map (Make 11) were verified against primary sources — SEC filings, investigative journalism, municipal records — before inclusion.</li>
+      <li>Copilot's generated HTML was reviewed for semantic structure errors and heading hierarchy violations before being committed to the repository.</li>
+      <li>Claude's research synthesis was cross-referenced against the original sources. Where a source was inaccessible, I flagged the uncertainty in the relevant make's attribution section.</li>
+      <li>Every image I included that was AI-generated is disclosed as such in the make's attribution box.</li>
+    </ul>
+
+    <h2>Limits, bias, and ethical considerations</h2>
+
+    <p>
+      The most important thing I learned about AI tools this semester is that their
+      outputs reflect the distribution of their training data, not reality. Crawford
+      (2021) describes AI systems as encoding "the priorities of the people who
+      built them." This means that when an image generator produces a superhero
+      comic formula, or when DALL·E underrepresents non-Western visual traditions,
+      these are not neutral technical outputs. They are the residue of choices made
+      during training about what data to include, what to weight, and what to
+      exclude.
+    </p>
+
+    <p>
+      Bender, Gebru, McMillan-Major, and Shmitchell (2021) make a related argument
+      about large language models: that they are "stochastic parrots," producing
+      fluent text by recombining patterns from training data without understanding.
+      The fluency is the danger. It is easy to mistake the surface coherence of a
+      Claude or ChatGPT response for accuracy, especially when the answer is in a
+      register that sounds authoritative. Every time I asked an AI tool a research
+      question, I verified the answer independently.
+    </p>
+
+    <p>
+      The transparency problem extends to labor. The tools I used were built and
+      are maintained by workers whose conditions are rarely disclosed. Roberts
+      (2019) documents how content moderation — the work that keeps AI platforms
+      safe to use — is outsourced specifically to create distance between platforms
+      and legal accountability. When I use these tools without acknowledging that,
+      I participate in the same structure of concealment this site is committed to
+      making visible.
+    </p>
+
+    <p>
+      My approach going forward: use AI intentionally rather than reflexively;
+      verify outputs against primary sources; disclose use fully; and resist the
+      framing that the interface is the whole story.
+    </p>
+
+    <h2>What I refused to use AI for</h2>
+    <ul style="font-size: 1rem; padding-left: 1.5rem; line-height: 1.8; color: var(--ink-soft);">
+      <li>Writing my final reflection. Every word is mine.</li>
+      <li>Writing the dialogue or endings of The Interview (Make 10).</li>
+      <li>Writing the advertisement copy in the speculative newspaper (Make 12) — the line "powered by a decade of real human insight" is mine, and central to the argument.</li>
+      <li>Writing the artist statements and reflections across the 12 makes.</li>
+      <li>Choosing which case studies to include in the AI labor and AI ecology projects.</li>
+      <li>Generating any image to represent myself on the About page. The portrait there is photographic, not AI-generated.</li>
+    </ul>
+
+    <div class="references">
+      <h2>Works referenced</h2>
+      <p>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? <em>Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency,</em> 610–623.</p>
+      <p>Crawford, K. (2021). <em>Atlas of AI: Power, politics, and the planetary costs of artificial intelligence.</em> Yale University Press.</p>
+      <p>Roberts, S. T. (2019). <em>Behind the screen: Content moderation in the shadows of social media.</em> Yale University Press.</p>
+    </div>
+
+    <a href="ethics.html" class="next-link">
+      <div><p class="eyebrow">Next →</p><strong>04 — Ethics</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="index.html">Home</a></li><li><a href="journey.html">My AI Journey</a></li>
+          <li><a href="final-reflection.html">Final Reflection</a></li><li><a href="sustainability-accessibility.html">Accessibility</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

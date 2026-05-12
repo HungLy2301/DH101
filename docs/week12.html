@@ -3,80 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 12: AI & Ecology - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>The Last Human Therapist — Make 12</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 12</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 12: AI & Ecology</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 12: AI & Ecology</h1>
-          <p class="page-subtitle">Environmental dimensions of computation</p>
-          <div class="page-body">
-            <h2>The Artifact</h2>
-    <p><iframe src="week12-future-news-article.html" width="100%" height="900" style="border:1px solid #ccc; max-width:100%;"></iframe></p>
-    <p>If the embed does not render in your current viewer, open the artifact directly here:</p>
-    <p><strong><a href="week12-future-news-article.html" target="_blank">View The Artifact</a></strong></p>
-    <p>The artifact is a newspaper profile published March 14, 2047, in a publication called The American Register. It depicts a near-future America in which human psychotherapy has been entirely replaced by an AI platform called ARIA, operated by a fictional company called MindBridge Corp. The article is occasioned by the retirement of Dr. Miriam Osei — framed by the publication as a milestone, an "end of an era" to be noted and celebrated. The key events leading to this future are not invented from scratch: they are extrapolations from trends already present in 2025. Insurance companies have steadily reduced reimbursement for therapy. AI mental health apps (Woebot, Wysa, and others) are already in widespread use. Telehealth has normalized remote care. Mental health provider shortages are severe and documented. The leap to 2047 imagines a federal coverage act that accelerated AI therapy's dominance by making it free and universally accessible, an undeniably appealing policy outcome. The hidden cost surfaces through two details embedded in the reporting: Section 14(c) of the fictional CareAccess Act, which allows "commercial wellness applications" to license aggregated session data; and the advertisement at the bottom of the page, which reads "Always listening. Always learning. Always here — powered by a decade of real human insight." The phrase "real human insight" is doing the work: it acknowledges, in the language of a marketing slogan, that the system is built on the disclosed intimacies of millions of patients who may not have understood that their grief was becoming a product. The assumptions this future reveals about human-AI relations are: that access is the primary measure of a healthcare system's success; that anonymization is equivalent to privacy; and that the terms of a therapeutic relationship can be governed by a terms-ofservice agreement without meaningful consequence.</p>
-    <h2>Reflection</h2>
-    <p>This future is not desirable, but it is not a fantasy either, which is precisely the point. Every element of it has a precedent in 2025. Insurance companies already deprioritize mental health reimbursement. AI therapy tools already collect session data. Legislation governing data use in healthcare is already riddled with provisions that most patients never read. The fictional CareAccess Act is not a dystopian invention; it is a plausible next legislative step. What makes this future worth examining is that it is also genuinely good, in measurable ways. Suicide rates are down. Access is universal. Wait times are minutes, not weeks. The article does not let the reader dismiss ARIA as a failure, because it isn't one, by most available metrics. The discomfort the artifact is designed to produce is not "AI is bad" but something more specific: what happens when the frame we use to evaluate a system excludes the question of who owns the data produced by that system? What would need to change to avoid this future? Strong data sovereignty law specifically covering therapeutic disclosure. Law that treats what you say to a mental health system as belonging to you, unconditionally, regardless of anonymization. Meaningful informed consent, not a terms-of-service checkbox. And a political culture willing to treat emotional data as categorically different from behavioral data, more like a confession than a transaction. Whether that culture is available to us is the question this artifact is really asking.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Tools used:</li>
-    <p>Claude (Anthropic, claude.ai) Used throughout the creative development process in the following specific ways: •	Brainstorming: I described my thematic interests (AI in healthcare, utopian-butcostly tone, 2047 dateline) and Claude generated a list of possible news hooks. I selected "profile of the last human therapist retiring" from among several options it proposed. •	Structural feedback: After drafting the article's outline myself, I asked Claude to identify where the hidden cost (data ownership) could surface most naturally within journalistic conventions. It suggested embedding it in the body of the article as reported fact rather than editorializing — I agreed and wrote the Section 14(c) detail accordingly. •	Fact-checking fictional plausibility: I asked Claude whether the legal framing of "therapeutic data stewardship" and anonymization-as-privacy had real precedents. It pointed me toward existing HIPAA limitations and app-based therapy data practices, which I used to ground the fictional legislation in actual 2025 policy gaps. What I did not use Claude for: Claude did not write the article, Dr. Osei's dialogue, the advertisement copy, or the written deliverables. All prose was written by me and revised through my own editorial judgment.</p>
-    <li>Design & Code</li>
-    <p>•	HTML and CSS written mainly by Claude with my prompts and due diligence after each output •	Layout modeled on broadsheet newspaper conventions (column rules, nameplate structure, dropcap, pull quote) — referenced visually from The New York Times and The Guardian print editions, not copied from any source •	Fonts: Libre Baskerville, Barlow Condensed, Barlow — all sourced from Google Fonts under the Open Font License</p>
-    <li>Image Sources</li>
-    <p>No external images used. All visual elements are typographic and CSS-based.</p>
-    <li>Fictional Sources & Characters</li>
-    <p>All named individuals, organizations, legislation, and statistics within the article are fictional and invented for speculative purposes: •	Dr. Miriam Osei — fictional character •	MindBridge Corp. / ARIA platform — fictional company and product •	CareAccess Act of 2039 / Section 14(c) — fictional legislation •	Thomas Achebe (byline) — fictional journalist •	All statistics (287M users, 34% suicide rate decline, etc.) — invented for internal narrative consistency, not drawn from real data The advertisement at the bottom of the page ("Always listening. Always learning. Always here") is original copy written by me as part of the artifact's critical argument.</p>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 12 · Week 12</span>
+        <span>Speculative fiction · Newspaper</span>
+        <span>Dateline: March 14, 2047</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">The Last Human Therapist</h1>
+      <p class="make-subtitle">
+        A speculative newspaper from 2047 about the retirement of the last human
+        psychotherapist — and the law that made universal AI therapy free, with one
+        clause buried inside.
+      </p>
+    </header>
 
+    <!-- Full-width newspaper embed -->
+    <div class="artifact-frame" style="margin-bottom: 3rem; padding: 0; background: white;">
+      <iframe
+        src="../assets/future-news-article.html"
+        width="100%" height="900"
+        style="border: none; border-radius: 2px;"
+        title="The Last Human Therapist — speculative newspaper article from 2047"
+        loading="lazy"></iframe>
+    </div>
+    <p class="artifact-caption" style="text-align: center; margin: -2.5rem 0 3rem 0;">
+      <a href="../assets/week12-future-news-article.html" target="_blank" rel="noopener">Open the artifact in full screen →</a>
+    </p>
+
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">The Setup</h2>
+
+        <p>
+          The artifact is a newspaper profile published March 14, 2047, in a
+          publication called <em>The American Register.</em> It depicts a
+          near-future America in which human psychotherapy has been entirely
+          replaced by an AI platform called ARIA, operated by a fictional
+          company called MindBridge Corp. The article is occasioned by the
+          retirement of Dr. Miriam Osei — framed by the publication as a
+          milestone, an "end of an era" to be noted and celebrated.
+        </p>
+
+        <h3>What's extrapolated, not invented</h3>
+        <p>
+          The key events leading to this future are not invented from scratch:
+          they are extrapolations from trends already present in 2025.
+          Insurance companies have steadily reduced reimbursement for therapy.
+          AI mental health apps (Woebot, Wysa, and others) are already in
+          widespread use. Telehealth has normalized remote care. Mental health
+          provider shortages are severe and documented. The leap to 2047
+          imagines a federal coverage act that accelerated AI therapy's
+          dominance by making it free and universally accessible — an
+          undeniably appealing policy outcome.
+        </p>
+
+        <h3>Where the hidden cost surfaces</h3>
+        <p>
+          Through two details embedded in the reporting: <strong>Section 14(c)
+          of the fictional CareAccess Act,</strong> which allows "commercial
+          wellness applications" to license aggregated session data; and
+          <strong>the advertisement at the bottom of the page,</strong> which
+          reads <em>"Always listening. Always learning. Always here — powered
+          by a decade of real human insight."</em>
+        </p>
+        <p>
+          The phrase "real human insight" is doing the work: it acknowledges,
+          in the language of a marketing slogan, that the system is built on
+          the disclosed intimacies of millions of patients who may not have
+          understood that their grief was becoming a product.
+        </p>
+
+        <h3>What this future assumes</h3>
+        <p>
+          That access is the primary measure of a healthcare system's success;
+          that anonymization is equivalent to privacy; and that the terms of a
+          therapeutic relationship can be governed by a terms-of-service
+          agreement without meaningful consequence.
+        </p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>Not desirable, but not a fantasy</h3>
+        <p>
+          This future is not desirable, but it is not a fantasy either, which is
+          precisely the point. Every element of it has a precedent in 2025.
+          Insurance companies already deprioritize mental health reimbursement.
+          AI therapy tools already collect session data. Legislation governing
+          data use in healthcare is already riddled with provisions that most
+          patients never read. The fictional CareAccess Act is not a dystopian
+          invention — it is a plausible next legislative step.
+        </p>
+
+        <h3>Genuinely good, in measurable ways</h3>
+        <p>
+          What makes this future worth examining is that it is also genuinely
+          good, in measurable ways. Suicide rates are down. Access is universal.
+          Wait times are minutes, not weeks. The article does not let the reader
+          dismiss ARIA as a failure, because it isn't one, by most available
+          metrics. The discomfort the artifact is designed to produce is not
+          "AI is bad" but something more specific: what happens when the frame
+          we use to evaluate a system excludes the question of who owns the
+          data produced by that system?
+        </p>
+
+        <h3>What would need to change</h3>
+        <p>
+          Strong data sovereignty law specifically covering therapeutic
+          disclosure. Law that treats what you say to a mental health system
+          as belonging to you, unconditionally, regardless of anonymization.
+          Meaningful informed consent, not a terms-of-service checkbox. And a
+          political culture willing to treat emotional data as categorically
+          different from behavioral data — more like a confession than a
+          transaction. Whether that culture is available to us is the question
+          this artifact is really asking.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>AI collaborator</dt>
+          <dd>Claude (Anthropic), used throughout creative development.</dd></div>
+        <div><dt>What I asked AI to help with</dt>
+          <dd><strong>Brainstorming:</strong> I described my thematic interests (AI in healthcare, utopian-but-costly tone, 2047 dateline) and Claude generated a list of possible news hooks. I selected "profile of the last human therapist retiring" from several options it proposed.<br><br>
+          <strong>Structural feedback:</strong> After drafting the article's outline myself, I asked Claude where the hidden cost (data ownership) could surface most naturally within journalistic conventions. It suggested embedding it as reported fact rather than editorializing — I agreed and wrote the Section 14(c) detail accordingly.<br><br>
+          <strong>Fact-checking plausibility:</strong> I asked Claude whether the legal framing of "therapeutic data stewardship" and anonymization-as-privacy had real precedents. It pointed me toward existing HIPAA limitations and app-based therapy data practices, which I used to ground the fictional legislation in actual 2025 policy gaps.</dd></div>
+        <div><dt>What I did NOT use Claude for</dt>
+          <dd>Claude did not write the article, Dr. Osei's dialogue, the advertisement copy, or any written deliverables. All prose was written by me and revised through my own editorial judgment. The advertisement line — "Always listening. Always learning. Always here — powered by a decade of real human insight" — is original copy written by me as part of the artifact's critical argument.</dd></div>
+        <div><dt>Design &amp; code</dt>
+          <dd>HTML and CSS written mainly by Claude with my prompts and due diligence after each output. Layout modeled on broadsheet newspaper conventions (column rules, nameplate structure, dropcap, pull quote) — referenced visually from <em>The New York Times</em> and <em>The Guardian</em> print editions, not copied from any source. Fonts: Libre Baskerville, Barlow Condensed, Barlow — all from Google Fonts under the Open Font License.</dd></div>
+        <div><dt>Image sources</dt>
+          <dd>No external images used. All visual elements are typographic and CSS-based.</dd></div>
+        <div><dt>Fictional sources &amp; characters</dt>
+          <dd>All named individuals, organizations, legislation, and statistics within the article are fictional and invented for speculative purposes: Dr. Miriam Osei (fictional character) · MindBridge Corp. / ARIA platform (fictional company and product) · CareAccess Act of 2039 / Section 14(c) (fictional legislation) · Thomas Achebe (fictional journalist) · all statistics (287M users, 34% suicide rate decline, etc.) invented for internal narrative consistency, not drawn from real data.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 12 + 13</p>
+      <h3>Is AI sustainable? Do we imagine AI futures as utopian, dystopian, or something in between?</h3>
+      <p>
+        In its current form, AI is not sustainable. It requires large amounts of
+        water, energy, land, and minerals, and these demands are growing
+        quickly. Data centers are being built in areas that already face water
+        shortages, and the environmental cost is often placed on communities
+        that do not benefit from the technology. AI could become more
+        sustainable, but this would require better decisions about where and how
+        systems are built, more transparency about resource use, and limits on
+        expansion in sensitive areas. The real issue is not only what trade-offs
+        we accept, but who gets to decide them. Right now, the people most
+        affected by environmental costs often have the least influence.
+      </p>
+      <p>
+        I tend to imagine AI futures as in between, and I think that's harder to
+        sit with than either extreme. Pure dystopia lets you off the hook; pure
+        utopia does the same in reverse. What unsettles me more is a future
+        where the headline numbers are good and the cost is buried in a terms
+        of service clause nobody read. Working on this project clarified
+        something: the futures we imagine reveal what we have already accepted.
+        The believable 2047 I built was just 2025, extended forward until it
+        became impossible to ignore.
+      </p>
+    </section>
+
+    <a href="../final-reflection.html" class="next-link">
+      <div><p class="eyebrow">Final →</p><strong>The Final Reflection: What the Machine Doesn't Show You</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

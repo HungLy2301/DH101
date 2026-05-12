@@ -3,79 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 11: AI & Labor - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>What the Cloud Drinks — Make 11</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 11</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Week 11: AI & Labor</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Week 11: AI & Labor</h1>
-          <p class="page-subtitle">Automation, work, and human costs</p>
-          <div class="page-body">
-            <h2>The Artifact</h2>
-    <p>Environmental Visualization Datawrapper: https://datawrapper.dwcdn.net/fgiaF/2/</p>
-    <h2>Process Notes</h2>
-    <p>My research drew primarily from investigative journalism and policy reporting published between 2021 and 2026. The core sources were the Business Record's November 2025 coverage of Iowa data center water use, two Axios Des Moines pieces covering the 2025 West Des Moines water crisis and the 2026 disclosure legislation, Grist's March 2026 investigation into Arizona's data center expansion, a joint Guardian/Source Material analysis of Big Tech water use in drought regions, and Data Center Dynamics' coverage of Amsterdam's moratorium and its aftermath. For theoretical framing, I drew on Kate Crawford's Atlas of AI, which provides the conceptual vocabulary for understanding AI infrastructure as extractive rather than neutral. The hardest data to find was facility-level water use figures. Tech companies consistently report water usage in global aggregates rather than by individual site, which makes it nearly impossible to say with precision how much water a specific campus uses. The Microsoft Goodyear, Arizona figure (56 million gallons annually) only emerged because a journalist found it buried in a city council analysis that Microsoft shared locally. The Iowa figures were available because West Des Moines Water Works is a public utility with some disclosure obligations. The Netherlands data centers, by contrast, are subject to municipal agreements that include confidentiality clauses. The most significant uncertainty in this project is the question of indirect water use: the water consumed by the power plants that supply electricity to data centers is often excluded from the companies' reported figures. Grist's 2026 Arizona reporting cites projections that power-plant water use in Arizona could quadruple to meet data center demand, a figure that dwarfs the on-site usage typically reported. Any visualization of data center water impact that excludes this indirect cost is, by definition, an undercount. This project's map represents direct use only, and should be read with that limitation in mind.</p>
-    <h2>Reflection</h2>
-    <p>The environmental cost that concerns me most from this research is not the largest number I found. It is the smallest one: the confidentiality clause. In Eagle Mountain, Utah, Meta signed an agreement with the city in 2018 to keep its monthly water use figures private. In Goodyear, Arizona, Microsoft's water records were classified as proprietary until a journalist found a local council document. In Iowa, a state law requiring data centers to disclose their water use publicly did not exist until 2026. The water is being used. The number exists. Someone is choosing not to share it. That pattern of the active concealment of the resource cost of AI infrastructure is what this project is really about. The map I built shows three locations. The actual scope of the problem is much larger and much harder to see, partly because it is designed to be. Can AI be sustainable? I think the honest answer is: not in its current form, and not at its current rate of expansion. Sustainability would require siting decisions made with genuine community input, mandatory disclosure of water and energy use, regulatory limits on building in water-stressed regions, and a willingness by companies to accept constraints on growth. The Netherlands demonstrated that this is politically possible. The United States has largely demonstrated that it is politically unlikely without sustained pressure. My responsibility, as I understand it, is to see the infrastructure clearly, not to accept the metaphor of the cloud as neutral, weightless, consequence-free. This project is an attempt at that clarity. What I do with it next is the harder question.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Tools used:</li>
-    <p>•	Datawrapper — interactive map visualization •	Claude (Anthropic, claude.ai) — research synthesis and writing assistance during drafting of the Research Documentation and Artist Statement •	Google Scholar, investigative journalism databases — source verification and fact-checking</p>
-    <li>AI prompts (summary):</li>
-    <p>•	"I'm building a data visualization about AI data center water use. I have sources on Iowa, Arizona, and the Netherlands. Help me organize the key data points from each case into a comparative structure I can use for a map." •	"Review this draft of my artist statement for clarity and pacing. Does the argument about confidentiality clauses land as the central claim?" •	"What is the estimated CO₂ per ChatGPT query and is there a commonly cited figure for personal AI energy impact I can use in the sustainability reflection?"</p>
-    <li>What AI generated:</li>
-    <p>•	A suggested three-column comparative structure (Iowa / Arizona / Netherlands) that I used as a starting framework for organizing my research notes •	Pacing feedback on the artist statement that confirmed the confidentiality clause opening was working; I kept the structure and rewrote individual sentences •	Confirmation of the 4.55g CO₂ estimate and a pointer to the studies behind it, which I then verified independently before citing</p>
-    <li>What you changed or decided:</li>
-    <p>•	All three case studies were selected by me based on what the sources could actually support with specific, verifiable numbers — AI did not choose them •	The central argument (that concealment is the subject of the project, not just the water figures themselves) is entirely my own framing; Claude's feedback confirmed it was landing, but did not produce it •	The acknowledgment that my map is an undercount because it excludes indirect power-plant water use was my own editorial decision, made because I found the Grist Arizona projection and decided intellectual honesty required naming the limitation explicitly •	Every factual claim — the 11.5 million gallons per month in Iowa, the 23,000-resident water equivalent in Arizona, the 2018 Eagle Mountain confidentiality agreement — was verified against the primary source before inclusion •	The Sustainability & Ethics page structure, all four sections, and the personal reflection on what I will and won't change are entirely my own writing</p>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 11 · Week 11</span>
+        <span>Data viz · Ecology</span>
+        <span>Tool: Datawrapper</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">What the Cloud Drinks</h1>
+      <p class="make-subtitle">
+        Three case studies on the water cost of AI data centers — Iowa, Arizona,
+        the Netherlands. The clearest finding was not about water. It was about
+        what gets disclosed and what doesn't.
+      </p>
+    </header>
 
+    <!-- Full-width Datawrapper embed -->
+    <div class="artifact-frame" style="margin-bottom: 3rem; padding: 0; background: white;">
+      <iframe
+        src="https://datawrapper.dwcdn.net/fgiaF/2/"
+        width="100%" height="600"
+        style="border: none; border-radius: 2px;"
+        title="Interactive map: AI data center water use across Iowa, Arizona, and the Netherlands"
+        scrolling="no"
+        loading="lazy"></iframe>
+    </div>
+    <p class="artifact-caption" style="text-align: center; margin: -2.5rem 0 3rem 0;">
+      Click each pin for details and citations.
+      <a href="https://datawrapper.dwcdn.net/fgiaF/2/" target="_blank" rel="noopener">Open in Datawrapper →</a>
+    </p>
+
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Process Notes</h2>
+
+        <h3>Sources</h3>
+        <p style="font-size: 0.95rem;">
+          The research drew primarily from investigative journalism and policy
+          reporting published between 2021 and 2026. Core sources: the
+          <em>Business Record</em>'s November 2025 coverage of Iowa data center
+          water use; two <em>Axios Des Moines</em> pieces on the 2025 West Des
+          Moines water crisis and the 2026 disclosure legislation; <em>Grist</em>'s
+          March 2026 investigation of Arizona's data center expansion; a joint
+          <em>Guardian</em>/<em>Source Material</em> analysis of Big Tech water
+          use in drought regions; Data Center Dynamics' coverage of Amsterdam's
+          moratorium. For theoretical framing: Kate Crawford's <em>Atlas of AI.</em>
+        </p>
+
+        <h3>The hardest data to find</h3>
+        <p style="font-size: 0.95rem;">
+          Facility-level water use figures. Tech companies consistently report
+          water use in global aggregates rather than by individual site, which
+          makes it nearly impossible to say with precision how much water a
+          specific campus uses. The Microsoft Goodyear, Arizona figure (56
+          million gallons annually) only emerged because a journalist found it
+          buried in a city council analysis Microsoft shared locally. The Iowa
+          figures were available because West Des Moines Water Works is a public
+          utility with some disclosure obligations. The Netherlands data
+          centers, by contrast, are subject to municipal agreements that include
+          confidentiality clauses.
+        </p>
+
+        <h3>The undercount limitation</h3>
+        <p style="font-size: 0.95rem;">
+          The most significant uncertainty: indirect water use. The water
+          consumed by the power plants that supply electricity to data centers
+          is often excluded from the companies' reported figures. <em>Grist</em>'s
+          2026 Arizona reporting cites projections that power-plant water use in
+          Arizona could quadruple to meet data center demand — a figure that
+          dwarfs the on-site usage typically reported. Any visualization that
+          excludes indirect cost is, by definition, an undercount. This map
+          represents direct use only, and should be read with that limitation in
+          mind.
+        </p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>The smallest number is the loudest</h3>
+        <p>
+          The environmental cost that concerns me most from this research is not
+          the largest number I found. It is the smallest one: the confidentiality
+          clause. In Eagle Mountain, Utah, Meta signed an agreement with the city
+          in 2018 to keep its monthly water use figures private. In Goodyear,
+          Arizona, Microsoft's water records were classified as proprietary until
+          a journalist found a local council document. In Iowa, a state law
+          requiring data centers to disclose their water use publicly did not
+          exist until 2026. The water is being used. The number exists. Someone
+          is choosing not to share it.
+        </p>
+
+        <h3>What this project is really about</h3>
+        <p>
+          That pattern — the active concealment of the resource cost of AI
+          infrastructure — is what this project is really about. The map I built
+          shows three locations. The actual scope of the problem is much larger
+          and much harder to see, partly because it is designed to be.
+        </p>
+
+        <h3>Can AI be sustainable?</h3>
+        <p>
+          Honest answer: not in its current form, and not at its current rate of
+          expansion. Sustainability would require siting decisions made with
+          genuine community input, mandatory disclosure of water and energy use,
+          regulatory limits on building in water-stressed regions, and a
+          willingness by companies to accept constraints on growth. The
+          Netherlands demonstrated that this is politically possible. The
+          United States has largely demonstrated that it is politically unlikely
+          without sustained pressure.
+        </p>
+
+        <h3>My responsibility</h3>
+        <p>
+          My responsibility, as I understand it, is to see the infrastructure
+          clearly — not to accept the metaphor of the cloud as neutral,
+          weightless, consequence-free. This project is an attempt at that
+          clarity. What I do with it next is the harder question.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Tools used</dt>
+          <dd>Datawrapper — interactive map visualization · Claude (Anthropic) — research synthesis and drafting assistance · Google Scholar &amp; investigative journalism databases — verification</dd></div>
+        <div><dt>AI prompts (summary)</dt>
+          <dd>"I'm building a data visualization about AI data center water use. I have sources on Iowa, Arizona, and the Netherlands. Help me organize the key data points from each case into a comparative structure I can use for a map."<br>
+          "Review this draft of my artist statement for clarity and pacing. Does the argument about confidentiality clauses land as the central claim?"<br>
+          "What is the estimated CO₂ per ChatGPT query and is there a commonly cited figure for personal AI energy impact?"</dd></div>
+        <div><dt>What AI generated</dt>
+          <dd>A suggested three-column comparative structure (Iowa / Arizona / Netherlands) used as a starting framework for organizing research notes. Pacing feedback confirming the confidentiality clause opening was working — I kept the structure and rewrote individual sentences. Confirmation of the 4.55g CO₂ estimate and a pointer to the studies behind it, verified independently before citation.</dd></div>
+        <div><dt>What I changed or decided</dt>
+          <dd>All three case studies were selected by me based on what the sources could actually support with specific, verifiable numbers — AI did not choose them. The central argument (that concealment is the subject of the project, not the water figures themselves) is entirely my own framing. The acknowledgment that the map is an undercount because it excludes indirect power-plant water use was my own editorial decision. Every factual claim — 11.5 million gallons per month in Iowa, the 23,000-resident water equivalent in Arizona, the 2018 Eagle Mountain confidentiality agreement — was verified against the primary source before inclusion.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 11</p>
+      <h3>Who does the invisible work of AI, and who profits from it?</h3>
+      <p>
+        The invisible work of AI is done by groups that are often overlooked.
+        This includes data center workers who maintain the infrastructure,
+        content moderators who review harmful material, and gig workers who
+        label training data. There are also communities living near data
+        centers and mining areas who face environmental impacts like water use
+        and pollution without having much say in these decisions.
+      </p>
+      <p>
+        At the same time, the profits mainly go to large companies, shareholders,
+        and high-skill workers who develop and sell AI systems. There is a clear
+        gap between those who carry the costs and those who benefit from it.
+        Understanding AI should not only focus on technology, but also on labor
+        and environmental impact, especially on the people who are often left
+        invisible.
+      </p>
+    </section>
+
+    <a href="make12.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>12 — The Last Human Therapist</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

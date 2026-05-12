@@ -3,93 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Analysis: How Machines Read - Hung Ly</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>What Voyant and GPT Can't Feel — Make 05</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="project-page">
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Hung Ly</a>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="../index.html" class="nav-logo">Hung Ly</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="my-ai-journey.html">My AI Journey</a></li>
-        <li><a href="sustainability-accessibility.html">Sustainability + Accessibility</a></li>
-        <li><a href="design-ai-usage.html">Design & AI Usage</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li>
+        <li><a href="../journey.html" aria-current="page">My AI Journey</a></li>
+        <li><a href="../design-ai-usage.html">Design &amp; AI</a></li>
+        <li><a href="../ethics.html">Ethics</a></li>
+        <li><a href="../sustainability-accessibility.html">Sustainability</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
     </nav>
   </header>
 
   <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>/</span>
+      <a href="../journey.html">My AI Journey</a><span>/</span><span>Make 05</span>
+    </nav>
+    <a href="../journey.html" class="back-link">← Back to the journey</a>
 
-    <section class="breadcrumb">
-      <a href="my-ai-journey.html">My AI Journey</a>
-      <span>/</span>
-      <span>Text Analysis: How Machines Read</span>
-    </section>
-
-    <section class="content-section">
-      <div class="content-container">
-        <article>
-          <h1>Text Analysis: How Machines Read</h1>
-          <p class="page-subtitle">Comparing computational and AI approaches to textual meaning</p>
-          <div class="page-body">
-            <h2>Summary</h2>
-    <p>This week compares two machine reading approaches: Voyant's quantitative text patterns and GPT's interpretive analysis.</p>
-    <h2>Artifact</h2>
-    <p>The primary artifacts are Voyant visualizations and GPT analysis of Sojourner Truth's speech.</p>
-    <p><img src="assets/images/voyant-cirrus.png" alt="Voyant Cirrus word cloud showing prominent terms like woman, rights, and sojourner" /> <em>Voyant Cirrus word cloud highlighting key terms from “Ain’t I a Woman?”.</em></p>
-    <p><img src="assets/images/voyant-trends.png" alt="Voyant trends graph showing relative frequency of rights and woman across the speech" /> <em>Voyant trends visualization comparing important terms over the text segments.</em></p>
-    <h2>Process Notes</h2>
-    <ul>
-    <li>Tools used: Voyant Tools, ChatGPT, text analysis templates.</li>
-    <li>Text analyzed: “Ain’t I a Woman?” by Sojourner Truth (1851 speech, Akron Women’s Rights Convention).</li>
-    <li>External links: <a href="https://www.loc.gov/item/2021666380/" target="_blank">Sojourner Truth speech source</a>.</li>
-    </ul>
-    <h2>Analysis</h2>
-    <h3>Voyant Analysis Summary</h3>
-    <p>Using Voyant, I examined word frequency, trends across segments, and the Cirrus word cloud. The most frequent words were rights, woman, Sojourner, ain’t, and women. The repetition of woman and rights confirms that the speech centers on gender and political recognition. The trends view showed that rights peaks in the middle of the text, while woman increases toward the later segments, suggesting a shift from biography to direct argument.</p>
-    <h3>GPT Analysis Summary</h3>
-    <p>Prompt: “Give me a literary analysis of the text.” GPT produced a rhetorical and thematic interpretation. It discussed repetition, embodiment, intersection of race and gender, tone shifts, and biblical references. It interpreted “Ain’t I a woman?” as both a logical challenge and moral confrontation.</p>
-    <h3>Comparison</h3>
-    <p>Voyant imagines meaning as measurable frequency and distribution. Importance equals repetition. GPT imagines meaning as coherence and theme. Importance equals interpretive synthesis. Voyant is transparent but silent about significance. GPT is interpretive but opaque about process.</p>
-    <h2>Reflection</h2>
-    <p>This assignment made me realize that machines “read” according to their design. Voyant reads by counting and mapping. It assumes that meaning emerges from pattern density. This helps reveal emphasis and structure, especially in a speech built on repetition. But it flattens emotional intensity into data points. It cannot feel the grief in the line about children sold into slavery, nor can it recognize the strategic power of irony.</p>
-    <p>GPT reads by generating interpretation that resembles human literary analysis. It organizes themes and articulates connections across the text. This feels closer to classroom discussion. Yet it performs understanding rather than demonstrating it. It does not expose its evidence trail unless asked.</p>
-    <p>What we gain from machine reading is scale and speed. Patterns become visible instantly. What we lose is situated judgment. Neither tool experiences the historical weight of a formerly enslaved woman speaking in 1851.</p>
-    <h2>Attribution & AI Use</h2>
-    <ul>
-    <li>Text: Sojourner Truth, “Ain’t I a Woman?” (1851 speech, public domain)</li>
-    <li>Tools used: Voyant Tools, ChatGPT</li>
-    <li>GPT prompt: “Give me a literary analysis of the text.”</li>
-    <li>Voyant limitation: Cannot interpret tone, irony, or historical stakes.</li>
-    <li>GPT limitation: Does not reveal reasoning process and may overgeneralize without detailed prompts.</li>
-    </ul>
-          </div>
-          <div class="page-actions">
-            <a href="my-ai-journey.html" class="btn">← Back to My AI Journey</a>
-            <a href="final-reflection.html" class="btn btn-secondary">Final Reflection</a>
-          </div>
-        </article>
+    <header class="make-header">
+      <div class="make-meta">
+        <span>Make 05 · Week 05</span>
+        <span>Text analysis · Comparative reading</span>
+        <span>Tools: Voyant + GPT</span>
       </div>
-    </section>
-    
+      <h1 class="make-title">What Voyant and GPT Can't Feel</h1>
+      <p class="make-subtitle">
+        Two machines read Sojourner Truth's 1851 speech. One counts. One interprets.
+        Neither pauses. Neither feels the grief in the line about children sold into slavery.
+      </p>
+    </header>
 
+    <div class="make-grid">
+      <section class="make-artifact">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">The Artifact</h2>
+        <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); margin-bottom: 1rem;">Text analyzed: "Ain't I a Woman?" by Sojourner Truth (1851)</p>
+
+        <div class="artifact-frame">
+          <img src="../assets/voyant-cirrus.png" alt="Voyant Cirrus word cloud showing 'woman', 'rights', 'sojourner', 'ain't' as the dominant terms">
+        </div>
+        <p class="artifact-caption">Voyant Cirrus: word cloud weighted by frequency.</p>
+
+        <div class="artifact-frame" style="margin-top: 2rem;">
+          <img src="../assets/voyant-trends.png" alt="Voyant Trends line graph showing relative frequencies of 'women', 'woman', 'sojourner', 'rights', and 'ain't' across 10 document segments">
+        </div>
+        <p class="artifact-caption">Voyant Trends: term frequency across document segments.</p>
+      </section>
+
+      <section class="make-reflection">
+        <h2 style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem 0;">Your Take</h2>
+
+        <h3>Voyant's reading</h3>
+        <p>
+          The most frequent words were <em>rights, woman, sojourner, ain't,</em> and
+          <em>women</em>. The repetition of <em>woman</em> and <em>rights</em>
+          confirms that the speech centers on gender and political recognition. The
+          trends view showed that <em>rights</em> peaks in the middle of the text,
+          while <em>woman</em> increases toward the later segments, suggesting a
+          shift from biography to direct argument.
+        </p>
+        <p>
+          Voyant helped me see structural emphasis. It quantified repetition and
+          showed how certain terms cluster in particular sections. But it treated
+          the speech as a dataset. It could not distinguish between irony, grief,
+          or theological reversal. It showed patterns but did not explain their
+          force.
+        </p>
+
+        <h3>GPT's reading</h3>
+        <p>
+          I asked GPT for a literary analysis. It produced a rhetorical and thematic
+          interpretation — repetition, embodiment, the intersection of race and
+          gender, tone shifts, biblical references. It read "Ain't I a woman?" as
+          both a logical challenge and a moral confrontation. The analysis treated
+          the speech as a cohesive argument shaped by lived experience.
+        </p>
+        <p>
+          But GPT did not show how it derived those interpretations. Its authority
+          comes from fluency rather than visible method.
+        </p>
+
+        <h3>How the two machines imagine meaning</h3>
+        <p>
+          Voyant imagines meaning as measurable frequency and distribution.
+          Importance equals repetition. GPT imagines meaning as coherence and
+          theme. Importance equals interpretive synthesis. Voyant is transparent
+          but silent about significance. GPT is interpretive but opaque about
+          process.
+        </p>
+
+        <h3>What's lost in both</h3>
+        <p>
+          Machines "read" according to their design. Voyant reads by counting and
+          mapping. GPT reads by generating interpretation that resembles human
+          literary analysis. What we gain from machine reading is scale and speed.
+          Patterns become visible instantly. What we lose is situated judgment.
+          Neither tool experiences the historical weight of a formerly enslaved
+          woman speaking in 1851. Meaning changes depending on method — Voyant
+          fragments the text into units; GPT reconstructs it into argument.
+          Human reading still decides why those patterns and arguments matter.
+        </p>
+      </section>
+    </div>
+
+    <section class="attribution">
+      <h3>Attribution &amp; AI Use</h3>
+      <dl>
+        <div><dt>Text</dt><dd>Sojourner Truth, "Ain't I a Woman?" 1851 speech, Akron Women's Rights Convention. Public domain.</dd></div>
+        <div><dt>Tools used</dt><dd>Voyant Tools (voyant-tools.org) for word frequency, Cirrus, and Trends analysis. ChatGPT (OpenAI) for the literary analysis comparison.</dd></div>
+        <div><dt>GPT prompt</dt><dd>"Give me a literary analysis of the text."</dd></div>
+        <div><dt>Voyant limitations</dt><dd>Cannot interpret tone, irony, or historical stakes.</dd></div>
+        <div><dt>GPT limitations</dt><dd>Does not reveal reasoning process and may overgeneralize without textual prompting.</dd></div>
+        <div><dt>What I changed or decided</dt><dd>The comparative framing — placing the two machines side by side to surface what each "imagines" meaning to be — is my own. The argument that both tools fail to feel is my own reading.</dd></div>
+      </dl>
+    </section>
+
+    <section class="weekly-reflection">
+      <p class="eyebrow">Weekly reflection · Week 05</p>
+      <h3>How does AI alter authorship and remix culture? Who owns AI-made art?</h3>
+      <p>
+        AI changes authorship by making creation more collaborative and less
+        individual. Instead of one person making everything, there are multiple
+        layers: the person writing the prompt, the developers who built the
+        model, and the data used to train it. Authorship becomes shared and
+        sometimes unclear. In remix culture, AI speeds up reuse by generating
+        new content from existing patterns. The question of ownership becomes
+        complicated. While AI generates the output, it does not have intention
+        or identity. I think ownership should mainly belong to the human who
+        guides, edits, and gives meaning to the work, but being transparent
+        about AI involvement is important.
+      </p>
+    </section>
+
+    <a href="make6.html" class="next-link">
+      <div><p class="eyebrow">Next make →</p><strong>06 — The Map They Didn't Draw</strong></div>
+      <span style="font-family: var(--font-mono); color: var(--ink-faint);">→</span>
+    </a>
   </main>
 
-  <footer id="footer">
-    <div class="footer-content">
-      <div class="social-links">
-        <a href="https://github.com/hungly2301" target="_blank">GitHub</a>
-        <a href="mailto:ly_h1@denison.edu">Email</a>
-        <a href="https://www.linkedin.com/in/harry-ly-hung/" target="_blank">LinkedIn</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div><p class="footer-tagline">A semester of looking behind the interface.</p></div>
+        <div class="footer-col"><h5>Navigate</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../journey.html">My AI Journey</a></li>
+          <li><a href="../final-reflection.html">Final Reflection</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Connect</h5><ul>
+          <li><a href="mailto:ly_h1@denison.edu">ly_h1@denison.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/hung-ly-seniorconsultant/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul></div>
       </div>
-      <p class="footer-text">
-        © 2026 Harry Ly · DH 101: Critical Making in the Age of AI · Denison University
-      </p>
+      <div class="footer-bottom"><span>© 2026 Hung Ly · DH 101</span><span>Denison University</span></div>
     </div>
   </footer>
+  <script src="../script.js"></script>
 </body>
 </html>
