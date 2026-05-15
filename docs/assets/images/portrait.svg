@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 48" shape-rendering="crispEdges" class="hung-portrait" role="img" aria-label="Animated pixel-art portrait of Hung Ly">
+  <style>
+    .hung-portrait { width: 100%; height: 100%; display: block; }
+    [data-theme="dark"] .hung-portrait {
+      --hair: #0F0F14;
+      --skin: #D9B89A;
+      --skin-shade: #B8956F;
+      --eye: #0F0F14;
+      --mouth: #A8635B;
+      --polo: #E8E2D4;
+      --sweater: #B8A582;
+    }
+    .figure { animation: bob 4s ease-in-out infinite; transform-origin: center; }
+    .eyes { animation: blink 4.5s infinite; transform-origin: center 13px; }
+    .mouth-rect { animation: smile 6s ease-in-out infinite; transform-origin: 20px 21px; }
+    .sparkle { animation: sparkle 3s ease-in-out infinite; transform-origin: center; }
+    .sparkle-1 { animation-delay: 0s; }
+    .sparkle-2 { animation-delay: 1s; }
+    .sparkle-3 { animation-delay: 2s; }
+    .sparkle-4 { animation-delay: 0.5s; }
+    .sparkle-5 { animation-delay: 1.5s; }
+    .code-particle { animation: float 5s ease-in-out infinite; opacity: 0; }
+    .code-particle-1 { animation-delay: 0s; }
+    .code-particle-2 { animation-delay: 1.7s; }
+    .code-particle-3 { animation-delay: 3.4s; }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-0.4px); }
+    }
+    @keyframes blink {
+      0%, 92%, 96%, 100% { transform: scaleY(1); }
+      94%                { transform: scaleY(0.1); }
+    }
+    @keyframes smile {
+      0%, 80%, 100% { transform: scaleX(1); }
+      40%           { transform: scaleX(1.1); }
+    }
+    @keyframes sparkle {
+      0%, 100%   { opacity: 0; transform: scale(0.5); }
+      30%, 70%   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes float {
+      0%   { transform: translateY(0); opacity: 0; }
+      15%  { opacity: 1; }
+      85%  { opacity: 1; }
+      100% { transform: translateY(-10px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .figure, .eyes, .mouth-rect, .sparkle, .code-particle { animation: none; }
+    }
+  </style>
+
+  <g class="sparkles-bg">
+    <rect class="sparkle sparkle-1" x="3" y="8" width="1" height="1" fill="var(--accent, #B83838)"/>
+    <rect class="sparkle sparkle-2" x="36" y="12" width="1" height="1" fill="var(--accent, #B83838)"/>
+    <rect class="sparkle sparkle-3" x="5" y="20" width="1" height="1" fill="var(--accent, #B83838)"/>
+    <rect class="sparkle sparkle-4" x="37" y="22" width="1" height="1" fill="var(--accent, #B83838)"/>
+    <rect class="sparkle sparkle-5" x="2" y="28" width="1" height="1" fill="var(--accent, #B83838)"/>
+  </g>
+
+  <g class="figure">
+    <rect x="13" y="3" width="14" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="4" width="20" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="5" width="22" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="8" y="6" width="24" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="7" y="7" width="6" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="13" y="7" width="14" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="27" y="7" width="6" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="7" y="8" width="4" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="11" y="8" width="17" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="28" y="8" width="5" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="7" y="9" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="9" width="19" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="29" y="9" width="4" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="10" width="4" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="10" width="20" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="10" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="11" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="11" width="21" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="11" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="12" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="12" width="4" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="16" y="12" width="8" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="27" y="12" width="3" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="12" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="13" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="13" width="4" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="16" y="13" width="8" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="27" y="13" width="3" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="13" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="14" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="14" width="21" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="14" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="15" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="15" width="21" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="15" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="16" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="16" width="10" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="19" y="16" width="2" height="1" fill="var(--skin-shade, #C9A78B)"/>
+    <rect x="21" y="16" width="9" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="16" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="17" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="9" y="17" width="10" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="19" y="17" width="2" height="1" fill="var(--skin-shade, #C9A78B)"/>
+    <rect x="21" y="17" width="9" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="30" y="17" width="2" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="6" y="18" width="4" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="18" width="19" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="29" y="18" width="2" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="7" y="19" width="3" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="19" width="19" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="29" y="19" width="1" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="8" y="20" width="2" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="20" width="6" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="24" y="20" width="6" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="9" y="21" width="1" height="1" fill="var(--hair, #1A1A1F)"/>
+    <rect x="10" y="21" width="19" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="10" y="22" width="18" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="11" y="23" width="15" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="12" y="24" width="13" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="13" y="25" width="10" height="1" fill="var(--skin, #E8C9A8)"/>
+    <rect x="12" y="26" width="12" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="11" y="27" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="15" y="27" width="6" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="21" y="27" width="5" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="10" y="28" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="14" y="28" width="8" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="22" y="28" width="5" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="9" y="29" width="5" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="14" y="29" width="8" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="22" y="29" width="6" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="8" y="30" width="2" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="10" y="30" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="14" y="30" width="8" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="22" y="30" width="5" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="27" y="30" width="3" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="7" y="31" width="4" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="11" y="31" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="15" y="31" width="6" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="21" y="31" width="5" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="26" y="31" width="6" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="6" y="32" width="6" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="12" y="32" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="16" y="32" width="4" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="20" y="32" width="4" height="1" fill="var(--polo, #F5F1E8)"/>
+    <rect x="24" y="32" width="9" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="5" y="33" width="29" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="4" y="34" width="30" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="3" y="35" width="32" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="2" y="36" width="34" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="1" y="37" width="36" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="38" width="38" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="39" width="39" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="40" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="41" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="42" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="43" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="44" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="45" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="46" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect x="0" y="47" width="40" height="1" fill="var(--sweater, #C9B58F)"/>
+    <rect class="mouth-rect" x="16" y="20" width="8" height="1" fill="var(--mouth, #B8736A)"/>
+    <g class="eyes">
+      <rect x="13" y="12" width="3" height="1" fill="var(--eye, #1A1A1F)"/>
+      <rect x="24" y="12" width="3" height="1" fill="var(--eye, #1A1A1F)"/>
+      <rect x="13" y="13" width="3" height="1" fill="var(--eye, #1A1A1F)"/>
+      <rect x="24" y="13" width="3" height="1" fill="var(--eye, #1A1A1F)"/>
+    </g>
+  </g>
+
+  <g class="particles">
+    <g class="code-particle code-particle-1" transform="translate(34, 36)">
+      <rect width="1" height="1" fill="var(--accent, #B83838)"/>
+      <rect x="2" width="1" height="1" fill="var(--accent, #B83838)"/>
+    </g>
+    <g class="code-particle code-particle-2" transform="translate(2, 32)">
+      <rect width="1" height="1" fill="var(--accent, #B83838)"/>
+      <rect y="2" width="1" height="1" fill="var(--accent, #B83838)"/>
+    </g>
+    <g class="code-particle code-particle-3" transform="translate(38, 18)">
+      <rect width="1" height="1" fill="var(--accent, #B83838)"/>
+    </g>
+  </g>
+</svg>
+
