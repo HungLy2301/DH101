@@ -1,30 +1,28 @@
-# Week 7 – Mapping AI Worlds
+# Week 7 – Networks of Knowledge & Power
 
-## Summary
-This project builds a map of AI geography, labor, and infrastructure to show how power and cost are distributed globally.
+## The Artifact
+<figure>
+  <img src="assets/images/kumu-map.png" 
 
-## Artifact
-Map: https://www.google.com/maps/d/edit?mid=1VWQhf7N7qBogZJipxJLx-Z6NUeBFTMU&ll=25.241368318556674%2C-0.5817499999999924&z=3
-
-Describe the map and the data layers included. Mention the visual logic, color coding, and what the map reveals.
+</figure>
 
 ## Process Notes
-- Tools used: Google My Maps, research sources, mapping workflow.
-- Decisions: selected headquarters, data centers, and labor sites to highlight infrastructure and harm.
-- Links: provide source URLs for corporate and journalistic reporting.
+The most central node in this network is Google (Alphabet), with the highest degree centrality. It connects to the most other nodes, including data types (browsing history, location, content, AI prompts), its own products (YouTube, Gmail, Gemini), and even its supposed competitor Apple, which receives approximately $20 billion per year from Google to remain the default search engine on Safari. This financial relationship is the network's most surprising edge: Apple's entire privacy marketing brand is funded partly by the company it claims to protect users against.
+Three clear clusters emerged from the network. The Meta cluster sees Facebook, 
+Instagram, and Meta forming a tightly interconnected group, all feeding into a unified social graph and, since 2024, into Meta's Llama AI training pipeline. The Microsoft/work cluster shows LinkedIn, GitHub, and VS Code Copilot forming a professional identity network where Microsoft quietly collects career data, code, and AI prompts across tools many people consider neutral utilities. The data type cluster places nodes like "Your Location Data," "Your Financial Data," and "Your AI Prompts" at the intersection of many companies, acting as bridges between platforms that would otherwise seem unrelated.
+The most surprising finding was how many companies collect AI prompts, not just 
+ChatGPT, but also VS Code Copilot (routed through Microsoft/OpenAI), Gemini, Claude, Lovable, Canva AI, and Jobright. Every question asked, every piece of code written with AI assistance, and every job application assisted by AI becomes data owned by a corporation.
+This network omits data brokers such as Acxiom and LexisNexis that purchase data from these platforms and resell it. It also omits advertisers, who are the actual paying customers of most of these "free" services. The real product being sold, the user, is invisible in the network.
+These omissions are documented rather than accidental. Including data brokers and advertisers would have produced a more complete picture of the ecosystem's economic structure, but it would have also produced a less readable network. The decision to omit them is itself a design choice with political consequences — exactly the kind of choice this project is trying to make visible.
 
-## Sources
-- Alphabet investor relations and SEC filings
-- Meta infrastructure pages and press releases
-- Baxtel, dgtlinfra, and Data Center Dynamics for data center details
-- TIME Magazine 2023, CNN Business 2024, The Bureau of Investigative Journalism 2025, Foxglove, Washington Post, Rappler, and Coda Story
 
 ## Reflection
-Reflect on how maps can make AI power visible and how they may also hide or simplify relationships.
+This network makes visible what daily app use conceals: four companies (Apple, Google, Meta, and Microsoft) sit at the center of nearly everything I do digitally. Power in this network is not distributed; it is radial. Every action I take: searching, messaging, coding, applying for jobs, asking AI a question; produces data that flows toward these hubs. The entities with the most edges are not the services I consciously chose to use. They are the parent companies I never directly interact with.
+I am technically visible as the user who generates the data, but I have no node. My data (location, prompts, social graph, financial behavior) appears in the network as abstract types, not as a person with agency. The companies are visible; their internal AI systems and the advertisers who purchase the profiles built from my behavior are not. The workers who moderate content, the people in the DRC whose cobalt powers the devices, the regulators who failed to prevent this consolidation: all invisible.
+D'Ignazio and Klein (2020) argue in Data Feminism that the choice of what to put at the center of a visualization is never neutral — it determines what relationships become visible and what remains obscured. If I had centered this network on myself as the user, with edges pointing outward to services I chose rather than inward to corporations that chose me, the network would imply agency and consent. A network centered on advertisers as the hub would reveal the true economic structure: I am not the customer, I am the product. The choice of center node is always a political choice.
 
 ## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
-- What AI generated:
-- What you changed or decided:
-- Sources: see above.
+- Tools used: Kumu (network mapping and visualization), Claude AI by Anthropic (research organization and data verification), WebAIM Contrast Checker (accessibility testing), Google My Maps (cross-reference for geographic data)
+- AI prompts (summary): I asked Claude to help me compile and cross-reference which data types flow between specific companies — for example, confirming the reported figure for Google's annual payment to Apple and verifying which platforms route AI prompts through Microsoft/OpenAI infrastructure. I also asked it to help me identify gaps in the network: what entities are present in the real data ecosystem that I had not yet added as nodes.
+- What AI generated: A structured list of data-sharing relationships between platforms and parent companies, used as a research starting point. AI also flagged several nodes I had not initially included — specifically data brokers (Acxiom, LexisNexis) and the advertiser layer — which I ultimately chose to omit from the visual with a documented rationale rather than include them and dilute the network's argument.
+- What you changed or decided: Every structural and argumentative decision in this network is my own. I chose to center the network on corporations rather than on myself as the user — a deliberate political choice I explain in the artist statement. I decided which nodes to include and which to exclude, and I documented the exclusions honestly (data brokers, advertisers) rather than pretending the network is complete. The three-cluster structure, the identification of "Your AI Prompts" as a bridge node, and the observation that Apple's privacy brand is financially underwritten by Google are all findings I arrived at through my own analysis of the network topology. The written components — analysis, artist statement, accessibility statement — are entirely my own prose.
